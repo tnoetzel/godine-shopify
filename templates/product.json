@@ -11,7 +11,9 @@
           }
         },
         "title": {
-          "type": "title"
+          "type": "title",
+          "settings": {
+          }
         },
         "caption": {
           "type": "text",
@@ -21,16 +23,28 @@
           }
         },
         "price": {
-          "type": "price"
+          "type": "price",
+          "settings": {
+          }
         },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
-            "picker_type": "button"
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "text_LpQP9t": {
+          "type": "text",
+          "settings": {
+            "text": "YO: {{ product.metafields.test.testmeta.value.first_name.value }}",
+            "text_style": "body"
           }
         },
         "quantity_selector": {
-          "type": "quantity_selector"
+          "type": "quantity_selector",
+          "settings": {
+          }
         },
         "buy_buttons": {
           "type": "buy_buttons",
@@ -40,7 +54,9 @@
           }
         },
         "description": {
-          "type": "description"
+          "type": "description",
+          "settings": {
+          }
         },
         "collapsible-row-0": {
           "type": "collapsible_tab",
@@ -91,6 +107,7 @@
         "caption",
         "price",
         "variant_picker",
+        "text_LpQP9t",
         "quantity_selector",
         "buy_buttons",
         "description",
@@ -102,9 +119,13 @@
       ],
       "settings": {
         "enable_sticky_info": true,
-        "gallery_layout": "stacked",
+        "color_scheme": "",
         "media_size": "large",
         "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "media_position": "left",
+        "image_zoom": "lightbox",
         "mobile_thumbnails": "hide",
         "hide_variants": true,
         "enable_video_looping": false,
@@ -141,7 +162,9 @@
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
+        "section_color_scheme": "",
         "color_scheme": "scheme-2",
+        "image_behavior": "none",
         "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36
@@ -183,9 +206,9 @@
         "background_style": "none",
         "button_label": "",
         "button_link": "",
-        "swipe_on_mobile": false,
         "color_scheme": "scheme-1",
         "columns_mobile": "1",
+        "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -195,9 +218,11 @@
       "settings": {
         "heading": "You may also like",
         "heading_size": "h2",
+        "products_to_show": 4,
         "columns_desktop": 4,
         "color_scheme": "scheme-1",
         "image_ratio": "square",
+        "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
@@ -205,12 +230,22 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "custom_liquid_7BCMzR": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{{ product.metafields.test.testmeta | handle }}\n\n<p>\nGID:\n{{ product.metafields.test.testmeta }}\n<\/p>\n\n<p>\nNO1:\n{{ shop.metafields.author[\"gid:\/\/shopify\/Metaobject\/53685026934\"]}}\n<\/p>\n\n<p>\nNO2: shop.metafields.author.53685026934\n<\/p>\n\n<p>\nNO3:\n{{ shop.metafields.author[53685026934]}}\n<\/p>\n\n<p>\nNO4:\n{{ shop.metafields.author[\"53685026934\"]}}\n<\/p>\n\n<p>\nNO6:\nshop.metafields.author[gid:\/\/shopify\/Metaobject\/53685026934]\n<\/p>\n\n  {{ shop.metaobjects.author[\"charles-dickens\"].system.handle }}\n\n<p>\nYO?\n{{ product.metafields.test.testmeta }}\n<\/p>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "main",
     "image-with-text",
     "multicolumn",
-    "related-products"
+    "related-products",
+    "custom_liquid_7BCMzR"
   ]
 }

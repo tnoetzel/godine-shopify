@@ -3,7 +3,7 @@
     "custom_liquid_Pi4xfj": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "{{ metaobject.first_name }}",
+        "custom_liquid": "{{ metaobject.first_name }}\n\n{{ shop.metaobjects.author.values }}\n\n<p>\n{% assign author1 = shop.metaobjects.author[\"charles-dickens\"]  %}\n{{ author1.first_name }}\n<\/p>\n\n<p>\n{% assign authors2 = shop.metaobjects.author.values %}\n{% for author in authors2 %}\n    Yo2 {{ author.id }} {{ author.handle }}\n{% endfor %}\n<\/p>",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
