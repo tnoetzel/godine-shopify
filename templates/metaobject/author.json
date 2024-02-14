@@ -1,7 +1,16 @@
 {
   "sections": {
+    "custom_liquid_Pi4xfj": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{{ metaobject.first_name }}",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
   },
   "order": [
-
+    "custom_liquid_Pi4xfj"
   ]
 }
