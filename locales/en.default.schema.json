@@ -2319,6 +2319,18 @@
               "label": "Third heading"
             }
           }
+        },
+        "custom-liquid": {
+          "name": "Custom Liquid",
+          "settings": {
+            "custom_liquid": {
+              "label": "Liquid code",
+              "info": "Add app snippets or other code to create advanced customizations. [Learn more](https://shopify.dev/docs/api/liquid)"
+            }
+          },
+          "presets": {
+            "name": "Custom Liquid"
+          }
         }
       },
       "settings": {
