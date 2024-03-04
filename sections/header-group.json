@@ -28,6 +28,9 @@
     },
     "header": {
       "type": "header",
+      "custom_css": [
+        "a:hover,a:active,.header__icon:hover,.header__active-menu-item {color: #c34d5b;}"
+      ],
       "settings": {
         "logo_position": "middle-left",
         "menu": "main-menu",
