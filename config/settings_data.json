@@ -2,9 +2,9 @@
   "current": {
     "logo": "shopify:\/\/shop_images\/godine-logo.png",
     "logo_width": 150,
-    "type_header_font": "assistant_n4",
+    "type_header_font": "georgia_pro_n6",
     "heading_scale": 100,
-    "type_body_font": "assistant_n4",
+    "type_body_font": "georgia_pro_n4",
     "body_scale": 100,
     "page_width": 1200,
     "spacing_sections": 0,
@@ -154,7 +154,7 @@
       },
       "scheme-3": {
         "settings": {
-          "background": "#242833",
+          "background": "#c34d5b",
           "background_gradient": "",
           "text": "#ffffff",
           "button": "#ffffff",
