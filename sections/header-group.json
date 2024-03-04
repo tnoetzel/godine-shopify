@@ -30,7 +30,7 @@
       "type": "header",
       "custom_css": [
         "a:hover,a:active,.header__icon:hover,.header__active-menu-item {color: #c34d5b;}",
-        "h1 a span {color: #c34d5b; text-transform: uppercase; font-style: italic; font-size: 3rem;}"
+        ".header__heading-link span {color: #c34d5b; text-transform: uppercase; font-style: italic; font-size: 3rem;}"
       ],
       "settings": {
         "logo_position": "middle-left",
