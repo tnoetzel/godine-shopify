@@ -1,0 +1,114 @@
+{% assign authors shop.metaobjects.authors | where: "id", "53685026934" %}
+{% for author in authors %}
+  Yo
+{% endfor %}
+
+{% assign authors2 %}
+{% for author in authors2 %}
+  Yo {{ author.id }}
+  {{ author.handle }}
+{% endfor %}
+
+{% for author in shop.metaobjects.author.values %}
+  {{ testimonial.author.value }}
+{% endfor %}
+
+{% for testimonial in shop.metaobjects.testimonials.values %}
+  {{ testimonial.author.value }}
+{% endfor %}
+
+{{ shop.metaobjects.testimonials.home_page.system.id }}
+
+WORKS:
+{{ product.metafields.test.testmeta.value.first_name.value }}
+{{ product.metafields.test.testmeta.value.system.handle }}
+
+{{ collections[collection.metafields.test.test].title }}
+{{ collections[collection.metafields.test.test].value.title }}
+
+{{ product.metafields.test.testmeta.value.metafields.test.first_name }}
+
+<section>
+  <h2>Collection Only</h2>
+  <p>Product only gets a collection...</p>
+
+  <div>
+    <strong>PRODUCT PAGE REFERENCING AUTHOR</strong>
+    {{ product.metafields.godine.author_collection.value.title }} (LIQUID-ONLY)
+    {{ product.metafields.godine.author_collection.value.metafields.godine.title }} (LIQUID-ONLY)
+    {{ product.metafields.godine.author_collection.value.metafields.godine.first_name }} (LIQUID-ONLY)
+  </div>
+
+  Limitations: - Liquid-only on product page - Lots of collections...
+</section>
+
+<section>
+  <h2>Product and Metaobject both Reference Eachother</h2>
+
+  <div>
+    <strong>PRODUCT PAGE REFERENCING AUTHOR</strong>
+    {{ product.metafields.godine.author.value.first_name.value }} (WORKS IN TEXT)
+
+    OR
+
+    {{ collections[product.metafields.godine.author].metafields.godine.first_name }} (LIQUID-ONLY)
+  </div>
+
+  <div>
+    <strong>AUTHOR (METAOBJECT PAGE) REFERENCING PRODUCTS</strong>
+    {% for myprod in metaobject.products.value %}
+      {{ myprod.title }}
+    {% endfor %}
+  </div>
+</section>
+
+<section>
+  <h2>Collection and Metaobject</h2>
+  <p>Product gets an author metaobject *and* a collection...</p>
+
+  No apparent advantages!
+</section>
+
+<section>
+  <h2>Metaobject Only...</h2>
+
+  WORKS, but can't filter on array of products...
+
+  {% assign authors = shop.metaobjects.author.values | where: 'first_name', 'Charles' | where: 'last_name' includes 'Dickens' %}
+
+  {% for author in authors %}
+    {{ author.first_name.value }}
+    {{ author.last_name.value }}
+  {% endfor %}
+
+  WON'T WORK!
+
+  https://stackoverflow.com/questions/57748892/is-it-possible-to-use-a-liquid-where-array-filter-with-nested-properties
+
+  {% assign cat = collections.all.products
+    | map: 'metafields'
+    | map: 'test'
+    | map: 'testmeta'
+    | map: 'value'
+    | map: 'system'
+    | where: 'id', 53685026934
+  %}
+  {% for ca in cat %}
+    YO! {{ ca.handle }}
+  {% endfor %}
+
+  <hr>
+  {% assign cateogry_products = products | map: 'metafields.test.testmeta' %}
+
+  {% for cateogry_product of cateogry_products %}
+    Yo
+  {% endfor %}
+
+  {% for product in collections.all.products %}
+    YO
+  {% endfor %}
+
+  {% assign cat = collections.all.products | map: 'metafields' | map: 'test' | map: 'test' %}
+
+  {% assign cat = collections.all.products | map: 'metafields' | map: 'test' | where: 'text-collection', 'Bar' %}
+</section>
