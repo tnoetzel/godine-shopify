@@ -27,52 +27,11 @@
             "swatch_shape": "circle"
           }
         },
-        "text_LpQP9t": {
-          "type": "text",
-          "settings": {
-            "text": "YO: {{ product.metafields.test.testmeta.value.first_name.value }}",
-            "text_style": "body"
-          }
-        },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {
-          }
-        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
             "show_dynamic_checkout": false,
             "show_gift_card_recipient": true
-          }
-        },
-        "description": {
-          "type": "description",
-          "settings": {
-          }
-        },
-        "collapsible_tab_KCeMHc": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Praise for {{ product.title }}",
-            "icon": "chat_bubble",
-            "content": "<p>{{ product.metafields.godine.product_praise | metafield_tag }}<\/p>",
-            "page": ""
-          }
-        },
-        "collapsible-row-2": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Dimensions",
-            "icon": "ruler",
-            "content": "",
-            "page": ""
-          }
-        },
-        "share": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
           }
         }
       },
@@ -81,18 +40,12 @@
         "caption",
         "price",
         "variant_picker",
-        "text_LpQP9t",
-        "quantity_selector",
-        "buy_buttons",
-        "description",
-        "collapsible_tab_KCeMHc",
-        "collapsible-row-2",
-        "share"
+        "buy_buttons"
       ],
       "settings": {
         "enable_sticky_info": true,
         "color_scheme": "",
-        "media_size": "large",
+        "media_size": "small",
         "constrain_to_viewport": true,
         "media_fit": "contain",
         "gallery_layout": "stacked",
@@ -103,6 +56,15 @@
         "enable_video_looping": false,
         "padding_top": 36,
         "padding_bottom": 12
+      }
+    },
+    "custom_liquid_NFU6bH": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"page-width\">\n<div class=\"grid grid--1-col\">\n<div class=\"grid__item\">\n{{ product.description }}\n<\/div>\n<\/div>\n<\/div>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "image-with-text": {
@@ -215,6 +177,7 @@
   },
   "order": [
     "main",
+    "custom_liquid_NFU6bH",
     "image-with-text",
     "multicolumn",
     "related-products",
