@@ -2208,7 +2208,7 @@
 }
 {% endschema %}
 
-<script>
+{% comment %} <script>
   function variant_change_listener(callback){
     const selector = 'input[name="id"]';
     const emitting_element = document.querySelector(selector);
@@ -2220,4 +2220,4 @@
    }
    // either call listening function directly in flow of document or set it to run after document ready
    variant_change_listener();
-</script>
+</script> {% endcomment %}
