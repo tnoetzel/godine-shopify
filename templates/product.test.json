@@ -17,7 +17,7 @@
         "custom_liquid_iWHErG": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "{% if product.metafields.godine.contributor_collection %}\n\n{% assign author = product.metafields.godine.contributor_collection.value %}\n\nby <a href=\"{{ author.url }}\">{{ author.title | replace: 'Author\/Contributor:', '' }}<\/a>\n{% endif %}"
+            "custom_liquid": "{% if product.metafields.godine.contributor_collection %}\n\n{% assign contributors = product.metafields.godine.contributor_collection.value %}\n\n{% for contributor in contributors %}\n\nby <a href=\"{{ author.url }}\">{{ author.title | replace: 'Author\/Contributor:', '' }}<\/a>\n\n{% endfor %}\n{% endif %}"
           }
         },
         "caption": {
