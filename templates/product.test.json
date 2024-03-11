@@ -14,12 +14,6 @@
             "custom_liquid": "{% if product.metafields.godine.author_collection %}\n\n{% assign author = product.metafields.godine.author_collection.value %}\n\nby <a href=\"{{ author.url }}\">{{ author.title | replace: 'Author\/Contributor:', '' }}<\/a>\n{% endif %}\n\n<br>\n{% if product.metafields.godine.contributor_collection %}\n\nwith contributions by\n{% assign contributors = product.metafields.godine.contributor_collection.value %}\n\n{% for contributor in contributors %}\n\n<a href=\"{{ contributor.url }}\">{{ contributor.title | replace: 'Author\/Contributor:', '' }}<\/a>\n\n{% endfor %}\n{% endif %}"
           }
         },
-        "custom_liquid_iWHErG": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "{{ product. selected_or_first_available_variant.barcode }}\n\n{% for variant in product.variants %}\n{% if variant.selected %}\nTrue\n{% else %}\nFALSE\n{% endif %}\n{% endfor %}"
-          }
-        },
         "caption": {
           "type": "text",
           "settings": {
@@ -59,7 +53,6 @@
       "block_order": [
         "title",
         "custom_liquid_KiQYcQ",
-        "custom_liquid_iWHErG",
         "caption",
         "price",
         "variant_picker",
