@@ -54,8 +54,8 @@
         "collapsible_tab_KCeMHc": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Praise for {{ block.settings.page.title }}",
-            "icon": "none",
+            "heading": "Praise for {{ product.title }}",
+            "icon": "chat_bubble",
             "content": "",
             "page": ""
           }
