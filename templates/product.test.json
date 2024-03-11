@@ -45,6 +45,15 @@
             "show_dynamic_checkout": false,
             "show_gift_card_recipient": true
           }
+        },
+        "collapsible_tab_Hj3bfz": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "content": "{% for variant in product.variants %}\n<div style=\"margin-bottom: 1.5rem\">\n\n<strong>{{ variant.options }}<\/strong><br>\n\nISBN: {{ variant.barcode}}<br>\n\nPages: {{ variant.metafields.godine.page_count }}<br>\n\nSize: {{ variant.metafields.godine.size }}\n<\/div>\n{% endfor %}",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -54,7 +63,8 @@
         "caption",
         "price",
         "variant_picker",
-        "buy_buttons"
+        "buy_buttons",
+        "collapsible_tab_Hj3bfz"
       ],
       "settings": {
         "enable_sticky_info": true,
