@@ -8,6 +8,12 @@
           "settings": {
           }
         },
+        "custom_liquid_KiQYcQ": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "Author"
+          }
+        },
         "caption": {
           "type": "text",
           "settings": {
@@ -37,6 +43,7 @@
       },
       "block_order": [
         "title",
+        "custom_liquid_KiQYcQ",
         "caption",
         "price",
         "variant_picker",
@@ -45,7 +52,7 @@
       "settings": {
         "enable_sticky_info": true,
         "color_scheme": "",
-        "media_size": "large",
+        "media_size": "small",
         "constrain_to_viewport": true,
         "media_fit": "contain",
         "gallery_layout": "stacked",
@@ -164,15 +171,6 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
-    },
-    "custom_liquid_7BCMzR": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "{{ product.metafields.test.testmeta | handle }}\n\n<p>\nGID:\n{{ product.metafields.test.testmeta }}\n<\/p>\n\n<p>\nNO1:\n{{ shop.metafields.author[\"gid:\/\/shopify\/Metaobject\/53685026934\"]}}\n<\/p>\n\n<p>\nNO2: shop.metafields.author.53685026934\n<\/p>\n\n<p>\nNO3:\n{{ shop.metafields.author[53685026934]}}\n<\/p>\n\n<p>\nNO4:\n{{ shop.metafields.author[\"53685026934\"]}}\n<\/p>\n\n<p>\nNO6:\nshop.metafields.author[gid:\/\/shopify\/Metaobject\/53685026934]\n<\/p>\n\n  {{ shop.metaobjects.author[\"charles-dickens\"].system.handle }}\n\n<p>\nYO?\n{{ product.metafields.test.testmeta }}\n<\/p>",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
     }
   },
   "order": [
@@ -180,7 +178,6 @@
     "custom_liquid_NFU6bH",
     "image-with-text",
     "multicolumn",
-    "related-products",
-    "custom_liquid_7BCMzR"
+    "related-products"
   ]
 }
