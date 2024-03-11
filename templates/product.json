@@ -51,6 +51,15 @@
           "settings": {
           }
         },
+        "collapsible_tab_KCeMHc": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Praise for {{ block.settings.page.title }}",
+            "icon": "none",
+            "content": "",
+            "page": ""
+          }
+        },
         "collapsible-row-2": {
           "type": "collapsible_tab",
           "settings": {
@@ -76,6 +85,7 @@
         "quantity_selector",
         "buy_buttons",
         "description",
+        "collapsible_tab_KCeMHc",
         "collapsible-row-2",
         "share"
       ],
