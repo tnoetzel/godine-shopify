@@ -371,5 +371,11 @@
         }
       }
     }
+  },
+  "platform_customizations": {
+    "custom_css": [
+      ".product__description.rte blockquote {display: unset !important;}",
+      ".product__description.rte blockquote p {margin-bottom: 1.5rem;}"
+    ]
   }
 }
