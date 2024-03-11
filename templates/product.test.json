@@ -11,7 +11,7 @@
         "custom_liquid_KiQYcQ": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "Author"
+            "custom_liquid": "{% if product.metafields.godine.author_collection %}\n\n{% assign author = product.metafields.godine.author_collection.value %}\n\nby <a href=\"{{ author.url }}\">{{ author.title | replace: 'Author\/Contributor:', '' }}<\/a>\n{% endif %}"
           }
         },
         "caption": {
