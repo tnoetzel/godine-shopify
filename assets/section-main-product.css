@@ -1523,4 +1523,8 @@ a.product__text {
   .product .rte blockquote {
     display: unset !important;
   }
+  
+  .product a {
+    color: #C34D5B;
+  }
 }
