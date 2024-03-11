@@ -17,7 +17,7 @@
         "custom_liquid_iWHErG": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": ""
+            "custom_liquid": "{{ product. selected_or_first_available_variant.barcode }}"
           }
         },
         "caption": {
