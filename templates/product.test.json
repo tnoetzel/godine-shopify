@@ -49,8 +49,8 @@
         "collapsible_tab_Hj3bfz": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
+            "heading": "Details",
+            "icon": "price_tag",
             "content": "{% for variant in product.variants %}\n<div style=\"margin-bottom: 1.5rem\">\n\n<strong>{{ variant.options }}<\/strong><br>\n\nISBN: {{ variant.barcode}}<br>\n\nPages: {{ variant.metafields.godine.page_count }}<br>\n\nSize: {{ variant.metafields.godine.size }}\n<\/div>\n{% endfor %}",
             "page": ""
           }
