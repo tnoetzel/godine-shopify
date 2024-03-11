@@ -56,7 +56,7 @@
           "settings": {
             "heading": "Praise for {{ product.title }}",
             "icon": "chat_bubble",
-            "content": "",
+            "content": "<p>{{ product.metafields.godine.product_praise | metafield_tag }}<\/p>",
             "page": ""
           }
         },
