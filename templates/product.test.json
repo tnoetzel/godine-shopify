@@ -48,6 +48,15 @@
             "content": "{% for variant in product.variants %}\n<div style=\"margin-bottom: 1.5rem\">\n\n<strong>{{ variant.options }}<\/strong><br>\n\nISBN: {{ variant.barcode}}<br>\n\nPages: {{ variant.metafields.godine.page_count }}<br>\n\nSize: {{ variant.metafields.godine.size }}\n<\/div>\n{% endfor %}",
             "page": ""
           }
+        },
+        "collapsible_tab_tRzGDm": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "About the Author",
+            "icon": "heart",
+            "content": "",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -57,7 +66,8 @@
         "price",
         "variant_picker",
         "buy_buttons",
-        "collapsible_tab_Hj3bfz"
+        "collapsible_tab_Hj3bfz",
+        "collapsible_tab_tRzGDm"
       ],
       "settings": {
         "enable_sticky_info": true,
