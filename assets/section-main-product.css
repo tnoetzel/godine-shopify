@@ -1507,13 +1507,13 @@ a.product__text {
 /* GODINE CUSTOM OVERRIDES */
 @media screen and (min-width: 990px) {
   .product:not(.product--no-media) .product__media-wrapper {
-    max-width: 20%;
-    width: calc(20% - var(--grid-desktop-horizontal-spacing) / 2);
+    max-width: 30%;
+    width: calc(30% - var(--grid-desktop-horizontal-spacing) / 2);
   }
 
   .product:not(.product--no-media) .product__info-wrapper {
-    max-width: 80%;
-    width: calc(80% - var(--grid-desktop-horizontal-spacing) / 2);
+    max-width: 70%;
+    width: calc(70% - var(--grid-desktop-horizontal-spacing) / 2);
   }
 
   .product__info-container {
@@ -1523,8 +1523,12 @@ a.product__text {
   .product .rte blockquote {
     display: unset !important;
   }
-  
+
   .product a {
     color: #C34D5B;
   }
+}
+
+.product__accordion {
+  max-width: 440px;
 }
