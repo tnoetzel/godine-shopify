@@ -11,7 +11,7 @@
         "custom_liquid_KiQYcQ": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "{% if product.metafields.godine.contributor_1_description %}\n    <br>\n    {% assign contributor_group_1 = product.metafields.godine.contributor_1_collections.value %}\n\n    {{ product.metafields.godine.contributor_1_description }}\n    {% for contibutor in contributor_group_1 %}\n       <a href=\"{{ contributor_1.url }}\">{{ contributor_1.title | replace: 'Author\/Contributor:', '' }}<\/a>\n    {% endfor %}\n{% endif %}"
+            "custom_liquid": "{% if product.metafields.godine.contributor_1_description %}\n    <br>\n    {% assign contributor_group_1 = product.metafields.godine.contributor_1_collections.value %}\n\n    {{ product.metafields.godine.contributor_1_description }}\n    {% for contributor in contributor_group_1 %}\n        <a href=\"{{ contributor.url }}\">{{ contributor.title | replace: 'Author\/Contributor:', '' }}<\/a>\n    {% endfor %}\n{% endif %}"
           }
         },
         "caption": {
