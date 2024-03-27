@@ -54,7 +54,7 @@
           "settings": {
             "heading": "About the Author",
             "icon": "heart",
-            "content": "",
+            "content": "{{ product.metafields.godine.author_collection.value.metafields.godine.author_description| metafield_tag }}",
             "page": ""
           }
         }
