@@ -45,7 +45,7 @@
           "settings": {
             "heading": "Product Details",
             "icon": "price_tag",
-            "content": "{% for variant in product.variants %}\n<div style=\"margin-bottom: 1.5rem\">\n\n<strong>{{ variant.options }}<\/strong><br>\n\nISBN: {{ variant.barcode}}<br>\n\nPages: {{ variant.metafields.godine.page_count }}<br>\n\nSize: {{ variant.metafields.godine.size }}\n<\/div>\n{% endfor %}",
+            "content": "{% if product.metafields.godine.imprint_collection %}\n\n{% assign imprint = product.metafields.godine.imprint_collection.value %}\n<p>\n<a href=\"{{ imprint.url }}\">{{ imprint.title | replace: 'Imprint: ', '' }}<\/a>\n<\/p>\n{% endif %}\n\n{% for variant in product.variants %}\n<div style=\"margin-bottom: 1.5rem\">\n\n<strong>{{ variant.options }}<\/strong><br>\n\nISBN: {{ variant.barcode}}<br>\n\nPages: {{ variant.metafields.godine.page_count }}<br>\n\nSize: {{ variant.metafields.godine.size }}\n<\/div>\n{% endfor %}",
             "page": ""
           }
         },
