@@ -25,7 +25,7 @@
     endif
   -%}
 
-  {% assign collections = collections | where: 'template_suffix', 'category' %}
+  {% assign collections = collections | where: 'template_suffix', 'author' %}
 
   {%- paginate collections by paginate_by -%}
     <ul
