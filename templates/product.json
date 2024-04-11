@@ -27,13 +27,6 @@
             "swatch_shape": "circle"
           }
         },
-        "text_LpQP9t": {
-          "type": "text",
-          "settings": {
-            "text": "YO: {{ product.metafields.test.testmeta.value.first_name.value }}",
-            "text_style": "body"
-          }
-        },
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {
@@ -81,7 +74,6 @@
         "caption",
         "price",
         "variant_picker",
-        "text_LpQP9t",
         "quantity_selector",
         "buy_buttons",
         "description",
