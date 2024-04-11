@@ -3,10 +3,12 @@
     "custom_liquid_rrbiaX": {
       "type": "custom-liquid",
       "custom_css": [
-        ".author-blurb {\/* display: flex; *\/}"
+        ".author-blurb {display: flex; align-items: center; flex-wrap: wrap;}",
+        ".author-blurb .author-blurb-img {margin-right: 2rem; flex: 1 0 200px;}",
+        ".author-blurb p {flex: 1 1 auto;}"
       ],
       "settings": {
-        "custom_liquid": "<div class=\"page-width\">\n  <div class=\"author-blurb\">\n    <h1>{{ collection.title | replace: 'Author: ', '' }}<\/h1>\n    {{ collection | image_url: width: 200 | image_tag }}\n    <p>{{ collection.description }}<\/p>\n  <\/div>\n<\/div>",
+        "custom_liquid": "<div class=\"page-width\">\n    <h1>{{ collection.title | replace: 'Author: ', '' }}<\/h1>\n  <div class=\"author-blurb\">\n    <div class=\"author-blurb-img\">\n    {{ collection | image_url: width: 200 | image_tag }}\n    <\/div>\n    <p>{{ collection.description }}<\/p>\n  <\/div>\n<\/div>",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
@@ -14,6 +16,7 @@
     },
     "banner": {
       "type": "main-collection-banner",
+      "disabled": true,
       "settings": {
         "show_collection_description": true,
         "show_collection_image": false,
