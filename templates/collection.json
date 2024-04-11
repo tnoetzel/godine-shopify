@@ -22,7 +22,7 @@
       "type": "main-collection-product-grid",
       "custom_css": [
         ".media {background-color: white;}",
-        ".media img {height: 100%; width: auto; margin: 0 auto; position: static;}"
+        ".media img {height: 100%; width: auto; \/* margin: 0 auto; *\/ position: static;}"
       ],
       "settings": {
         "products_per_page": 16,
