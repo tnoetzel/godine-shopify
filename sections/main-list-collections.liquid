@@ -3,7 +3,7 @@
 
 <div class="page-width">
   <h1 class="title title--primary inline-richtext{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
-    {{ section.settings.title }}
+    {{ section.settings.title }} -- TJN!
   </h1>
 
   {%- liquid
@@ -24,6 +24,8 @@
       assign paginate_by = 28
     endif
   -%}
+
+  {% assign collections = collections | where: 'title' includes 'Category:' %}
 
   {%- paginate collections by paginate_by -%}
     <ul
