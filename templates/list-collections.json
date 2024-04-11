@@ -7,7 +7,7 @@
         ".media img {height: 100%; width: auto; \/* margin: 0 auto; *\/ position: static;}"
       ],
       "settings": {
-        "title": "Categories",
+        "title": "Authors",
         "sort": "alphabetical",
         "image_ratio": "portrait",
         "columns_desktop": 3,
