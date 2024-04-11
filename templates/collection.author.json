@@ -4,8 +4,9 @@
       "type": "custom-liquid",
       "custom_css": [
         ".author-blurb {display: flex; align-items: center; flex-wrap: wrap;}",
-        ".author-blurb .author-blurb-img {margin-right: 2rem; flex: 0 0 200px;}",
-        ".author-blurb p {flex: 1 1 px;}"
+        ".author-blurb .author-blurb-img {flex: 0 0 200px;}",
+        ".author-blurb .author-blurb-img img {margin-right: 2rem;}",
+        ".author-blurb p {flex: 1 1 300px;}"
       ],
       "settings": {
         "custom_liquid": "<div class=\"page-width\">\n    <h1>{{ collection.title | replace: 'Author: ', '' }}<\/h1>\n  <div class=\"author-blurb\">\n    <div class=\"author-blurb-img\">\n    {{ collection | image_url: width: 200 | image_tag }}\n    <\/div>\n    <p>{{ collection.description }}<\/p>\n  <\/div>\n<\/div>",
