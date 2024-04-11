@@ -2,10 +2,16 @@
   "sections": {
     "main": {
       "type": "main-list-collections",
+      "custom_css": [
+        ".media {background-color: white;}",
+        ".media img {height: 100%; width: auto; \/* margin: 0 auto; *\/ position: static;}"
+      ],
       "settings": {
-        "title": "Collections",
+        "title": "Categories",
         "sort": "alphabetical",
-        "image_ratio": "square"
+        "image_ratio": "portrait",
+        "columns_desktop": 3,
+        "columns_mobile": "2"
       }
     }
   },
