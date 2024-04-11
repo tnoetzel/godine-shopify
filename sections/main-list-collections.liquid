@@ -6,8 +6,6 @@
     {{ section.settings.title }}
   </h1>
 
-  {% assign collections = collections | where: 'title' includes 'Category:' %}
-
   {%- liquid
     case section.settings.sort
       when 'products_high', 'products_low'
@@ -26,6 +24,9 @@
       assign paginate_by = 28
     endif
   -%}
+
+  {% assign collections = collections | where: 'title' includes 'Category:' %}
+
   {%- paginate collections by paginate_by -%}
     <ul
       class="collection-list grid grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_mobile }}-col-tablet-down"
