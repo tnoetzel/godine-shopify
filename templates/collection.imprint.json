@@ -26,11 +26,15 @@
     },
     "product-grid": {
       "type": "main-collection-product-grid",
+      "custom_css": [
+        ".media {background-color: white;}",
+        ".media img {height: 100%; width: auto; \/* margin: 0 auto; *\/ position: static;}"
+      ],
       "settings": {
         "products_per_page": 16,
         "columns_desktop": 4,
         "color_scheme": "",
-        "image_ratio": "adapt",
+        "image_ratio": "portrait",
         "image_shape": "default",
         "show_secondary_image": false,
         "show_vendor": false,
