@@ -8,13 +8,21 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
+            "text": "It's our Spring Sale! Enter code GODINE24 at checkout to save 20%",
+            "link": ""
+          }
+        },
+        "announcement_UFcCAQ": {
+          "type": "announcement",
+          "settings": {
             "text": "Welcome to our store",
             "link": ""
           }
         }
       },
       "block_order": [
-        "announcement-bar-0"
+        "announcement-bar-0",
+        "announcement_UFcCAQ"
       ],
       "settings": {
         "color_scheme": "",
