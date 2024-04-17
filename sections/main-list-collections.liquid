@@ -189,7 +189,7 @@ collections(first: 10, query:"title:author*") {
       method: 'POST',
     });
 
-    const data = await res.json();
+    const data = await res.text();
     console.log(`data`, data);
   }
 
