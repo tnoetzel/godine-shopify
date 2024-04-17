@@ -6,26 +6,28 @@
     {{ section.settings.title }}
   </h1>
 
-  {%- liquid
-    case section.settings.sort
-      when 'products_high', 'products_low'
-        assign collections = collections | sort: 'all_products_count'
-      when 'date', 'date_reversed'
-        assign collections = collections | sort: 'published_at'
-    endcase
+  {% comment %}
+    {%- liquid
+      case section.settings.sort
+        when 'products_high', 'products_low'
+          assign collections = collections | sort: 'all_products_count'
+        when 'date', 'date_reversed'
+          assign collections = collections | sort: 'published_at'
+      endcase
 
-    if section.settings.sort == 'products_high' or section.settings.sort == 'date_reversed' or section.settings.sort == 'alphabetical_reversed'
-      assign collections = collections | reverse
-    endif
+      if section.settings.sort == 'products_high' or section.settings.sort == 'date_reversed' or section.settings.sort == 'alphabetical_reversed'
+        assign collections = collections | reverse
+      endif
 
-    assign moduloResult = 28 | modulo: section.settings.columns_desktop
-    assign paginate_by = 30
-    if moduloResult == 0
-      assign paginate_by = 28
-    endif
-  -%}
+      assign moduloResult = 28 | modulo: section.settings.columns_desktop
+      assign paginate_by = 30
+      if moduloResult == 0
+        assign paginate_by = 28
+      endif
+    -%}
+  {% endcomment %}
 
-  {% assign collections = collections | where: 'template_suffix', 'author' %}
+  {% assign collections = collections | where: 'template_suffix', 'author' | sort "metafields.godine_author_last_first" %}
 
   {%- paginate collections by paginate_by -%}
     <ul
