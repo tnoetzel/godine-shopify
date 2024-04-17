@@ -108,7 +108,8 @@ runIt();
             method: 'POST'
         });
 
-        console.log(`res`, res.json());
+        const data = await res.json();
+        console.log(`data`, data);
     }
 
     runIt();
