@@ -27,10 +27,7 @@
     -%}
   {% endcomment %}
 
-  {% assign collections = collections
-    | where: 'template_suffix', 'author'
-    | sort: 'metafields.godine.author_last_first'
-  %}
+  {% assign collections = collections | where: 'template_suffix', 'author' | sort: 'handle' %}
 
   {%- paginate collections by paginate_by -%}
     <ul
