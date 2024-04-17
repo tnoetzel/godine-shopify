@@ -154,8 +154,8 @@
 {% endschema %}
 
 <script>
-  const collectionQuery = JSON.stringify(
-    query: {`query {
+  const collectionQuery = JSON.stringify({
+    query: `{
       collections(first: 250, query:"title:author*") {
             edges {
                 node {
@@ -176,7 +176,7 @@
                 endCursor
             }
       }
-    }`
+    }`,
   });
 
   const myHeaders = new Headers();
