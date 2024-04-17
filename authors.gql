@@ -1,0 +1,119 @@
+# ADMIN
+{
+	collections(first: 250, query: "template_suffix:'author'") {
+        edges {
+            node {
+                id
+                title
+                handle
+                updatedAt
+                sortOrder
+                templateSuffix
+                metafields(first: 5) {
+                    edges {
+                        node {
+                            key
+                            value
+                        }
+                    }
+                }
+            }
+        }
+        pageInfo {
+            hasPreviousPage
+            hasNextPage
+            startCursor
+            endCursor
+        }
+	}
+}
+
+# STOREFRONT
+query {
+	collections(first: 250, query: "template_suffix:'author'") {
+        edges {
+            node {
+                id
+                title
+                handle
+                updatedAt
+                authorLastFirst: metafield(namespace: "godine", key: "author_last_first") {
+                    value
+                    type
+                }
+            }
+        }
+        pageInfo {
+            hasPreviousPage
+            hasNextPage
+            startCursor
+            endCursor
+        }
+	}
+}
+
+
+curl -X POST \
+  https://davidrgodine.myshopify.com/api/2024-04/graphql.json \
+  -H 'Content-Type: application/json' \
+  -H 'X-Shopify-Storefront-Access-Token: 0fc0056e09b62e93104f1e4d0f0b1dc1' \
+  -d '{
+    "query": "{
+	collections(first: 250, query: "template_suffix:'author'") {
+        edges {
+            node {
+                id
+                title
+                handle
+                updatedAt
+                sortOrder
+                templateSuffix
+                metafields(first: 5) {
+                    edges {
+                        node {
+                            key
+                            value
+                        }
+                    }
+                }
+            }
+        }
+        pageInfo {
+            hasPreviousPage
+            hasNextPage
+            startCursor
+            endCursor
+        }
+	}
+}"
+  }'
+
+
+{
+	collections(first: 1, query: "template_suffix:'author'") {
+        edges {
+            node {
+                id
+                title
+                handle
+                updatedAt
+                sortOrder
+                templateSuffix
+                metafields(first: 5) {
+                    edges {
+                        node {
+                            key
+                            value
+                        }
+                    }
+                }
+            }
+        }
+        pageInfo {
+            hasPreviousPage
+            hasNextPage
+            startCursor
+            endCursor
+        }
+	}
+}
