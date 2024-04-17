@@ -154,8 +154,8 @@
 {% endschema %}
 
 <script>
-  const collectionQuery = JSON.stringify(`
-    query {
+  const collectionQuery = JSON.stringify(
+    query: {`query {
       collections(first: 250, query:"title:author*") {
             edges {
                 node {
@@ -176,8 +176,8 @@
                 endCursor
             }
       }
-    }
-  `);
+    }`
+  });
 
   const myHeaders = new Headers();
   myHeaders.append('X-Shopify-Storefront-Access-Token', '0fc0056e09b62e93104f1e4d0f0b1dc1');
