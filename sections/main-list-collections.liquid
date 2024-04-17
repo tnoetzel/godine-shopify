@@ -29,7 +29,7 @@
 
   {% assign collections = collections
     | where: 'template_suffix', 'author'
-    | sort: 'metafields.godine_author_last_first'
+    | sort: 'metafields.godine.author_last_first'
   %}
 
   {%- paginate collections by paginate_by -%}
