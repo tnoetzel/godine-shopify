@@ -1,0 +1,19 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "custom_css": [
+        "table,tr,td {border: none; box-shadow: none;}",
+        "tr {display: flex; flex-wrap: wrap; gap: 0.5rem;}",
+        "td {flex: 1 1 250px; padding: 0;}"
+      ],
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
