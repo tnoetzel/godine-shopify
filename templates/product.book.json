@@ -104,10 +104,11 @@
     "custom_liquid_z4Txty": {
       "type": "custom-liquid",
       "custom_css": [
-        ".author {display: flex; flex-wrap: wrap; gap: 1.5rem;}",
+        ".author {display: flex; flex-wrap: wrap; gap: 2rem;}",
         ".author-img {flex: 0 1 200px; padding: 0;}",
         ".author-img img {width: 100%; max-width: 400px; height: auto; margin: 0 auto;}",
         ".author-description {flex: 1 1 400px;}",
+        ".author-description p:nth-of-type(1) {margin-top: 0;}",
         "@media screen and (max-width: 700px) {.author > div {flex: 1 0 100%; }}"
       ],
       "settings": {
