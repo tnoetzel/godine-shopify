@@ -5,9 +5,9 @@
       "custom_css": [
         ".blog-articles {grid-template-columns: 1fr;}",
         ".card {display: flex; flex-direction: row;}",
-        ".card__inner {display: block;}",
-        ".card .card__media {flex: 0 1 200px; margin: 0 auto;}",
-        ".card__media img {display: block; width: 100%; max-width: 200px; height: auto; margin: 0 auto;}",
+        ".card__inner {display: block; flex: 0 1 200px; margin: 0 auto;}",
+        "\/* .card .card__media {flex: 0 1 200px; margin: 0 auto;}",
+        " *\/.card__media img {display: block; width: 100%; max-width: 200px; height: auto; margin: 0 auto;}",
         ".card > .card__content {flex: 1 1 300px;}"
       ],
       "settings": {
