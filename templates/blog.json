@@ -4,7 +4,7 @@
       "type": "main-blog",
       "custom_css": [
         ".blog-articles {grid-template-columns: 1fr; gap: 2rem;}",
-        ".card {display: flex; flex-direction: row;}",
+        ".card {display: flex; flex-direction: row; gap: 2rem;}",
         ".card__inner {display: block; flex: 0 1 200px; margin: 0 auto;}",
         " \/* .card .card__media {flex: 0 1 200px; margin: 0 auto;}",
         " *\/.media,.card__media {position: static !important;}",
