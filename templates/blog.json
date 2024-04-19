@@ -2,6 +2,13 @@
   "sections": {
     "main": {
       "type": "main-blog",
+      "custom_css": [
+        ".blog-articles {grid-template-columns: 1fr;}",
+        ".card {display: flex; flex-direction: row;}",
+        ".card > .card__media {flex: 0 1 200px; margin: 0 auto;}",
+        ".card__media img {display: block; width: 100%; max-width: 200px; height: auto; margin: 0 auto;}",
+        ".card > .card__content {flex: 1 1 300px;}"
+      ],
       "settings": {
         "layout": "grid",
         "show_image": true,
