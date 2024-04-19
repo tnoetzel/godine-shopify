@@ -9,7 +9,7 @@
         ".author-blurb p {flex: 1 1 300px;}"
       ],
       "settings": {
-        "custom_liquid": "<div class=\"page-width\">\n    <h1>{{ collection.title | replace: 'Author: ', '' }}<\/h1>\n  <div class=\"author-blurb\">\n    {% if collection.image %}\n    <div class=\"author-blurb-img-container\">\n    {{ collection | image_url: width: 200 | image_tag }}\n    <\/div>\n    {% endif %}\n    <p>{{ collection.description }}<\/p>\n  <\/div>\n<\/div>",
+        "custom_liquid": "<div class=\"page-width\">\n    <h1>{{ collection.title | replace: 'Author: ', '' }}<\/h1>\n  <div class=\"author-blurb\">\n    {% if collection.image %}\n    <div class=\"author-blurb-img-container\">\n    {{ collection | image_url: width: 200 | image_tag }}\n    <\/div>\n    {% endif %}\n    <div>{{ collection.description }}<\/div>\n  <\/div>\n<\/div>",
         "color_scheme": "",
         "padding_top": 0,
         "padding_bottom": 0
