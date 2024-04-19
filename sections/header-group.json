@@ -11,21 +11,13 @@
             "text": "It's our Spring Sale! Save 20% with code GODINE24 at checkout",
             "link": ""
           }
-        },
-        "announcement_UFcCAQ": {
-          "type": "announcement",
-          "settings": {
-            "text": "Welcome to our store",
-            "link": ""
-          }
         }
       },
       "block_order": [
-        "announcement-bar-0",
-        "announcement_UFcCAQ"
+        "announcement-bar-0"
       ],
       "settings": {
-        "color_scheme": "",
+        "color_scheme": "scheme-5",
         "show_line_separator": true,
         "show_social": false,
         "auto_rotate": false,
