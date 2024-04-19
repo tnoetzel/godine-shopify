@@ -29,8 +29,15 @@
     },
     "custom_liquid_V3PjFG": {
       "type": "custom-liquid",
+      "custom_css": [
+        ".godine-article {display: flex; justify-content: center; flex-wrap: wrap; row-gap: 1rem; column-gap: 2rem;}",
+        ".godine-article .article-image {flex: 0 0 200px; margin: 0 auto;}",
+        ".godine-article .article-image img {display: block;}",
+        ".godine-article .article-content {flex: 1 1 300px;}",
+        ".godine-article .article-content p:nth-of-type(1) {margin-top: 0;}"
+      ],
       "settings": {
-        "custom_liquid": "<div class=\"article-template__content page-width page-width--narrow\" itemprop=\"articleBody\">\n\n{% if article.image %}\n<div>\nIMAGE\n<\/div>\n{% endif %}\n\n<div>\n{{ article.content }}\n<\/div>\n<\/div>",
+        "custom_liquid": "<div class=\"article-template__content page-width page-width--narrow godine-article\" itemprop=\"articleBody\">\n\n{% if article.image %}\n<div class=\"article-img\">\n{{ article.image | image_url: width: 400 | image_tag }}\n<\/div>\n{% endif %}\n\n<div class=\"article-content\">\n{{ article.content }}\n<\/div>\n<\/div>",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
