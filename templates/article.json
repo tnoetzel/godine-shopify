@@ -3,12 +3,6 @@
     "main": {
       "type": "main-article",
       "blocks": {
-        "featured_image": {
-          "type": "featured_image",
-          "settings": {
-            "image_height": "adapt"
-          }
-        },
         "title": {
           "type": "title",
           "settings": {
@@ -21,20 +15,30 @@
           "settings": {
             "share_label": "Share"
           }
-        },
-        "content": {
-          "type": "content"
         }
       },
       "block_order": [
-        "featured_image",
         "title",
-        "share",
-        "content"
-      ]
+        "share"
+      ],
+      "custom_css": [
+        ".article-template__back {display: none;}"
+      ],
+      "settings": {
+      }
+    },
+    "custom_liquid_V3PjFG": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"article-template__content page-width page-width--narrow rte scroll-trigger animate--slide-in\" itemprop=\"articleBody\">\n{{ article.content }}\n<\/div>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "custom_liquid_V3PjFG"
   ]
 }
