@@ -30,7 +30,7 @@
     "custom_liquid_V3PjFG": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div class=\"article-template__content page-width page-width--narrow rte scroll-trigger animate--slide-in\" itemprop=\"articleBody\">\n{{ article.content }}\n<\/div>",
+        "custom_liquid": "<div class=\"article-template__content page-width page-width--narrow\" itemprop=\"articleBody\">\n\n{% if article.image %}\n<div>\nIMAGE\n<\/div>\n{% endif %}\n\n<div>\n{{ article.content }}\n<\/div>\n<\/div>",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
