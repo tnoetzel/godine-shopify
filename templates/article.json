@@ -32,7 +32,7 @@
       "custom_css": [
         ".godine-article {display: flex; justify-content: center; flex-wrap: wrap; row-gap: 1rem; column-gap: 2rem;}",
         ".article-img {flex: 0 1 200px; margin: 0 auto;}",
-        ".article-img img {display: block; width: 100%; max-width: 400px; height: auto;}",
+        ".article-img img {display: block; width: 100%; max-width: 200px; height: auto; margin: 0 auto;}",
         ".article-content {flex: 1 1 300px;}",
         ".article-content p:nth-of-type(1) {margin-top: 0;}",
         "@media screen and (max-width: 700px) {.godine-article > div {flex: 1 0 100%; }}"
