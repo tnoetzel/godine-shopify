@@ -49,15 +49,6 @@
             "page": ""
           }
         },
-        "collapsible_tab_tRzGDm": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "About the Author",
-            "icon": "heart",
-            "content": "{% if product.metafields.godine.author_1_description %}\n    {% assign author_group_1 = product.metafields.godine.author_1_collections.value %}\n    {% assign authors = author_group_1 %}\n    {% for author in authors %}\n        {% if forloop.index > 1 %}<hr \/> {% endif %}\n        {{ author.metafields.godine.author_description | metafield_tag }}\n    {% endfor %}\n{% endif %}\n\n{% if product.metafields.godine.author_2_description %}\n    {% assign author_group_2 = product.metafields.godine.author_2_collections.value %}\n    {% assign authors = author_group_2 %}\n    {% for author in authors %}\n        <hr \/> {{ author.metafields.godine.author_description | metafield_tag }}\n    {% endfor %}\n{% endif %}\n\n{% if product.metafields.godine.author_3_description %}\n    {% assign author_group_3 = product.metafields.godine.author_3_collections.value %}\n    {% assign authors = author_group_3 %}\n    {% for author in authors %}\n        <hr \/> {{ author.metafields.godine.author_description | metafield_tag }}\n    {% endfor %}\n{% endif %}",
-            "page": ""
-          }
-        },
         "share_icqHfb": {
           "type": "share",
           "settings": {
@@ -73,7 +64,6 @@
         "variant_picker",
         "buy_buttons",
         "collapsible_tab_Hj3bfz",
-        "collapsible_tab_tRzGDm",
         "share_icqHfb"
       ],
       "settings": {
