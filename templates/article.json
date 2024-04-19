@@ -31,14 +31,14 @@
       "type": "custom-liquid",
       "custom_css": [
         ".godine-article {display: flex; justify-content: center; flex-wrap: wrap; row-gap: 1rem; column-gap: 2rem;}",
-        ".article-image {flex: 0 1 200px; margin: 0 auto;}",
-        ".article-image img {display: block; width: 100%; max-width: 400px; height: auto;}",
+        ".article-img {flex: 0 1 200px; margin: 0 auto;}",
+        ".article-img img {display: block; width: 100%; max-width: 400px; height: auto;}",
         ".article-content {flex: 1 1 300px;}",
         ".article-content p:nth-of-type(1) {margin-top: 0;}",
         "@media screen and (max-width: 700px) {.godine-article > div {flex: 1 0 100%; }}"
       ],
       "settings": {
-        "custom_liquid": "<div class=\"article-template__content page-width page-width--narrow godine-article\" itemprop=\"articleBody\">\n\n{% if article.image %}\n<div class=\"article-img\">\n{{ article.image | image_url: width: 400 | image_tag }}\n<\/div>\n{% endif %}\n\n<div class=\"article-content\">\n{{ article.content }}\n<\/div>\n<\/div>",
+        "custom_liquid": "<div class=\"godine-article article-template__content page-width page-width--narrow\" itemprop=\"articleBody\">\n\n{% if article.image %}\n<div class=\"article-img\">\n{{ article.image | image_url: width: 400 | image_tag }}\n<\/div>\n{% endif %}\n\n<div class=\"article-content\">\n{{ article.content }}\n<\/div>\n<\/div>",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
