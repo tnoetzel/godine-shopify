@@ -1,5 +1,5 @@
 # Running Locally
-shopify theme dev --store davidrgodine.myshopify.com
+shopify theme dev --store davidrgodine.myshopify.com --port=9393
 
 # Getting Latest Changes...
 I used the following to pull in upstream without rebasing... probably not necessary now that I started over

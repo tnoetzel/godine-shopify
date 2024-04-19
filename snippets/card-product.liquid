@@ -155,6 +155,16 @@
               {{ card_product.title | escape }}
             </a>
           </h3>
+          <div style="font-size: 12px">
+            {% if card_product.metafields.godine.author_1_description %}
+              {% assign author_group_1 = card_product.metafields.godine.author_1_collections.value %}
+              {{ card_product.metafields.godine.author_1_description }}
+              {% for author in author_group_1 %}
+                {{ author.title | replace: 'Author:', '' -}}
+                {%- if forloop.last != true and forloop.length > 0 %}, {% endif %}
+              {% endfor %}
+            {% endif %}
+          </div>
           <div class="card-information">
             {%- if show_vendor -%}
               <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
