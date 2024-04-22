@@ -14,11 +14,11 @@
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "View Now",
-            "button_link_1": "shopify:\/\/collections\/all",
+            "button_label_1": "View the Catalog",
+            "button_link_1": "shopify:\/\/pages\/catalog",
             "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
+            "button_label_2": "Shop All",
+            "button_link_2": "shopify:\/\/collections\/all",
             "button_style_secondary_2": false
           }
         }
@@ -29,12 +29,12 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/fall-winter-catalog-banner.jpg",
-        "image_overlay_opacity": 0,
+        "image_overlay_opacity": 10,
         "image_height": "adapt",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
+        "desktop_content_position": "top-center",
+        "show_text_box": true,
         "desktop_content_alignment": "center",
-        "color_scheme": "scheme-2",
+        "color_scheme": "scheme-1",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
