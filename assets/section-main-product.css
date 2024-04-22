@@ -1524,7 +1524,7 @@ a.product__text {
     display: unset !important;
   }
 
-  .product a {
+  .product a:not(.button) {
     color: #C34D5B;
   }
 }
