@@ -49,12 +49,6 @@
             "page": ""
           }
         },
-        "share_icqHfb": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
-        },
         "custom_liquid_pgbn8B": {
           "type": "custom_liquid",
           "settings": {
@@ -70,7 +64,6 @@
         "variant_picker",
         "buy_buttons",
         "collapsible_tab_Hj3bfz",
-        "share_icqHfb",
         "custom_liquid_pgbn8B"
       ],
       "settings": {
