@@ -54,6 +54,12 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "custom_liquid_pgbn8B": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<!-- AddToAny BEGIN -->\n<div class=\"a2a_kit a2a_kit_size_32 a2a_default_style\">\n<a class=\"a2a_dd\" href=\"https:\/\/www.addtoany.com\/share\"><\/a>\n<a class=\"a2a_button_facebook\"><\/a>\n<a class=\"a2a_button_email\"><\/a>\n<a class=\"a2a_button_twitter\"><\/a>\n<\/div>\n<script async src=\"https:\/\/static.addtoany.com\/menu\/page.js\"><\/script>\n<!-- AddToAny END -->"
+          }
         }
       },
       "block_order": [
@@ -64,7 +70,8 @@
         "variant_picker",
         "buy_buttons",
         "collapsible_tab_Hj3bfz",
-        "share_icqHfb"
+        "share_icqHfb",
+        "custom_liquid_pgbn8B"
       ],
       "settings": {
         "enable_sticky_info": true,
