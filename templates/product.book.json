@@ -54,6 +54,12 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "custom_liquid_WegKg6": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"sharethis-inline-share-buttons\"><\/div>"
+          }
         }
       },
       "block_order": [
@@ -64,7 +70,8 @@
         "variant_picker",
         "buy_buttons",
         "collapsible_tab_Hj3bfz",
-        "share_icqHfb"
+        "share_icqHfb",
+        "custom_liquid_WegKg6"
       ],
       "settings": {
         "enable_sticky_info": true,
