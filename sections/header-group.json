@@ -28,18 +28,6 @@
     },
     "announcement_bar_dqck6U": {
       "type": "announcement-bar",
-      "blocks": {
-        "announcement_JjjMPx": {
-          "type": "announcement",
-          "settings": {
-            "text": "Welcome to our store",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "announcement_JjjMPx"
-      ],
       "settings": {
         "color_scheme": "",
         "show_line_separator": true,
