@@ -111,7 +111,7 @@
     "custom_liquid_ptKgCw": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "{% if product.metafields.godine.news_and_events %}\n    <h3>News & Events<\/h3>\n\n{{ product.metafields.godine.news_and_events }}\n\n    {% for handle in product.metafields.godine.news_and_events %}\n        {% assign article = articles[handle] %}\n\nHandle: {{ handle }}\n{{ article }}\n\n        {% if article.title %}\n            {{ article.title }}\n        {% endif %}\n    {% endfor %}\n\n{% endif %}",
+        "custom_liquid": "<div class=\"page-width\">\n  <div class=\"grid grid--1-col\">\n    <div class=\"grid__item\">\n      {% if product.metafields.godine.news_and_events %}\n        <h3>News & Events<\/h3>\n\n        {% for handle in product.metafields.godine.news_and_events.value %}\n          {% assign slug = handle | prepend: 'events\/' %}\n\n          {% assign article = articles[slug] %}\n\n          {% if article.title.size > 0 %}\n            {{ article.title | link_to: article.url -}}\n            <br>\n          {% endif %}\n        {% endfor %}\n      {% endif %}\n    <\/div>\n  <\/div>\n<\/div>",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
