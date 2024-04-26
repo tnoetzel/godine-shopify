@@ -8,7 +8,7 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "It's our Spring Sale! Save 20% with code GODINE24 at checkout",
+            "text": "Save 20% with code GODINE24 at checkout",
             "link": ""
           }
         }
@@ -18,6 +18,30 @@
       ],
       "settings": {
         "color_scheme": "scheme-5",
+        "show_line_separator": true,
+        "show_social": false,
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "enable_country_selector": false,
+        "enable_language_selector": false
+      }
+    },
+    "announcement_bar_dqck6U": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement_JjjMPx": {
+          "type": "announcement",
+          "settings": {
+            "text": "Welcome to our store",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement_JjjMPx"
+      ],
+      "settings": {
+        "color_scheme": "",
         "show_line_separator": true,
         "show_social": false,
         "auto_rotate": false,
@@ -51,6 +75,7 @@
   },
   "order": [
     "announcement-bar",
+    "announcement_bar_dqck6U",
     "header"
   ]
 }
