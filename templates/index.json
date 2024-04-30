@@ -175,6 +175,40 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "multirow_jBQeUC": {
+      "type": "multirow",
+      "blocks": {
+        "row_i9trer": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bird.jpg",
+            "caption": "",
+            "heading": "",
+            "text": "",
+            "button_label": "View Catalog",
+            "button_link": "shopify:\/\/pages\/catalog"
+          }
+        }
+      },
+      "block_order": [
+        "row_i9trer"
+      ],
+      "settings": {
+        "image_height": "adapt",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "scheme-1",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -183,6 +217,7 @@
     "featured_collection_ncaq4f",
     "featured_collection_TUnqUb",
     "newsletter_F9XGnN",
-    "featured_blog_n6yFHt"
+    "featured_blog_n6yFHt",
+    "multirow_jBQeUC"
   ]
 }
