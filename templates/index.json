@@ -178,22 +178,6 @@
     },
     "multirow_jBQeUC": {
       "type": "multirow",
-      "blocks": {
-        "row_i9trer": {
-          "type": "row",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/bird.jpg",
-            "caption": "",
-            "heading": "",
-            "text": "",
-            "button_label": "View Catalog",
-            "button_link": "shopify:\/\/pages\/catalog"
-          }
-        }
-      },
-      "block_order": [
-        "row_i9trer"
-      ],
       "settings": {
         "image_height": "adapt",
         "desktop_image_width": "medium",
@@ -212,11 +196,14 @@
     },
     "custom_liquid_9RyPXd": {
       "type": "custom-liquid",
+      "custom_css": [
+        ".button {flex: 1 0 50%;}"
+      ],
       "settings": {
-        "custom_liquid": "<div class=\"multirow section-template--15017339879542__multirow_jBQeUC-padding gradient color-scheme-1\">\n    <div class=\"multirow__inner page-width\">\n        <div class=\"image-with-text isolate collapse-padding scroll-trigger animate--slide-in\">\n            <div class=\"image-with-text__grid grid grid--gapless grid--1-col grid--2-col-tablet\">\n                <div\n                    class=\"image-with-text__media-item image-with-text__media-item--medium image-with-text__media-item--middle grid__item\">\n                    <div class=\"image-with-text__media image-with-text__media--adapt gradient color-scheme-1 global-media-settings media\"\n                        style=\"padding-bottom: 97.8494623655914%;\"><img\n                            src=\"\/\/davidrgodine.myshopify.com\/cdn\/shop\/files\/bird.jpg?v=1714501848&amp;width=1500\"\n                            alt=\"\"\n                            srcset=\"\/\/davidrgodine.myshopify.com\/cdn\/shop\/files\/bird.jpg?v=1714501848&amp;width=165 165w, \/\/davidrgodine.myshopify.com\/cdn\/shop\/files\/bird.jpg?v=1714501848&amp;width=360 360w, \/\/davidrgodine.myshopify.com\/cdn\/shop\/files\/bird.jpg?v=1714501848&amp;width=535 535w, \/\/davidrgodine.myshopify.com\/cdn\/shop\/files\/bird.jpg?v=1714501848&amp;width=750 750w, \/\/davidrgodine.myshopify.com\/cdn\/shop\/files\/bird.jpg?v=1714501848&amp;width=1070 1070w, \/\/davidrgodine.myshopify.com\/cdn\/shop\/files\/bird.jpg?v=1714501848&amp;width=1500 1500w\"\n                            width=\"1500\" height=\"1468\" loading=\"lazy\" sizes=\"(min-width: 1200px) 550px,\n                  (min-width: 750px) calc((100vw - 130px) \/ 2), calc((100vw - 50px) \/ 2)\">\n                    <\/div>\n                <\/div>\n                <div class=\"image-with-text__text-item grid__item\">\n                    <div class=\"image-with-text__content image-with-text__content--middle image-with-text__content--desktop-left image-with-text__content--mobile-left image-with-text__content--adapt content-container background-transparent\">\n                        <a href=\"\/pages\/catalog\" class=\"button button--primary\">\n                            View Catalog\n                        <\/a>\n                        <a href=\"\/collections\/all\" class=\"button button--primary\">\n                            Shop All\n                        <\/a>\n                    <\/div>\n                <\/div>\n            <\/div>\n        <\/div>\n    <\/div>\n<\/div>",
+        "custom_liquid": "<div class=\"multirow section-template--15017339879542__multirow_jBQeUC-padding gradient color-scheme-1\">\n    <div class=\"multirow__inner page-width\">\n        <div class=\"image-with-text isolate collapse-padding scroll-trigger animate--slide-in\">\n            <div class=\"image-with-text__grid grid grid--gapless grid--1-col grid--2-col-tablet\">\n                <div\n                    class=\"image-with-text__media-item image-with-text__media-item--medium image-with-text__media-item--middle grid__item\">\n                    <div class=\"image-with-text__media image-with-text__media--adapt gradient color-scheme-1 global-media-settings media\"\n                        style=\"padding-bottom: 97.8494623655914%;\"><img\n                            src=\"\/\/davidrgodine.myshopify.com\/cdn\/shop\/files\/bird.jpg?v=1714501848&amp;width=1500\"\n                            alt=\"\"\n                            srcset=\"\/\/davidrgodine.myshopify.com\/cdn\/shop\/files\/bird.jpg?v=1714501848&amp;width=165 165w, \/\/davidrgodine.myshopify.com\/cdn\/shop\/files\/bird.jpg?v=1714501848&amp;width=360 360w, \/\/davidrgodine.myshopify.com\/cdn\/shop\/files\/bird.jpg?v=1714501848&amp;width=535 535w, \/\/davidrgodine.myshopify.com\/cdn\/shop\/files\/bird.jpg?v=1714501848&amp;width=750 750w, \/\/davidrgodine.myshopify.com\/cdn\/shop\/files\/bird.jpg?v=1714501848&amp;width=1070 1070w, \/\/davidrgodine.myshopify.com\/cdn\/shop\/files\/bird.jpg?v=1714501848&amp;width=1500 1500w\"\n                            width=\"1500\" height=\"1468\" loading=\"lazy\" sizes=\"(min-width: 1200px) 550px,\n                  (min-width: 750px) calc((100vw - 130px) \/ 2), calc((100vw - 50px) \/ 2)\">\n                    <\/div>\n                <\/div>\n                <div class=\"image-with-text__text-item grid__item\">\n                    <div class=\"image-with-text__content\">\n                        <div style=\"display: flex; gap: 16px\">\n                            <a href=\"\/pages\/catalog\" class=\"button button--primary\">\n                                View Catalog\n                            <\/a>\n                            <a href=\"\/collections\/all\" class=\"button button--primary\">\n                                Shop All\n                            <\/a>\n                        <\/div>\n                    <\/div>\n                <\/div>\n            <\/div>\n        <\/div>\n    <\/div>\n<\/div>",
         "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     }
   },
