@@ -1,5 +1,20 @@
 {
   "sections": {
+    "custom_liquid_9RyPXd": {
+      "type": "custom-liquid",
+      "custom_css": [
+        "h2 {text-align: center;}",
+        ".hero-img img {width: 100%; height: auto;}",
+        ".button-container {display: flex; gap: 16px; width: 100%;}",
+        ".button {flex: 1 1 50%;}"
+      ],
+      "settings": {
+        "custom_liquid": "<div class=\"multirow color-scheme-1\">\n    <div class=\"multirow__inner\">\n        <div class=\"collapse-padding\">\n            <div class=\"grid grid--gapless grid--1-col grid--2-col-tablet\">\n                <div class=\"grid__item hero-img\">\n                    <img src=\"\/\/davidrgodine.myshopify.com\/cdn\/shop\/files\/bird.jpg?v=1714501848&amp;width=1500\" alt=\"Save 20% on New & Recent Titles\" \/>\n                <\/div>\n                <div class=\"image-with-text__text-item grid__item\">\n                    <div class=\"image-with-text__content\">\n                        <h2>Godine Spring Sale<\/h2>\n                        <div class=\"button-container\">\n                            <a href=\"\/pages\/catalog\" class=\"button button--primary\">\n                                View Catalog\n                            <\/a>\n                            <a href=\"\/collections\/all\" class=\"button button--primary\">\n                                Shop All\n                            <\/a>\n                        <\/div>\n                    <\/div>\n                <\/div>\n            <\/div>\n        <\/div>\n    <\/div>\n<\/div>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -193,30 +208,16 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "custom_liquid_9RyPXd": {
-      "type": "custom-liquid",
-      "custom_css": [
-        ".hero-img img {width: 100%; height: auto;}",
-        ".button-container {display: flex; gap: 16px; width: 100%;}",
-        ".button {flex: 1 1 50%;}"
-      ],
-      "settings": {
-        "custom_liquid": "<div class=\"multirow color-scheme-1\">\n    <div class=\"multirow__inner\">\n        <div class=\"collapse-padding\">\n            <div class=\"grid grid--gapless grid--1-col grid--2-col-tablet\">\n                <div class=\"grid__item hero-img\">\n                    <img src=\"\/\/davidrgodine.myshopify.com\/cdn\/shop\/files\/bird.jpg?v=1714501848&amp;width=1500\" alt=\"Save 20% on New & Recent Titles\" \/>\n                <\/div>\n                <div class=\"image-with-text__text-item grid__item\">\n                    <div class=\"image-with-text__content\">\n                        <div class=\"button-container\">\n                            <a href=\"\/pages\/catalog\" class=\"button button--primary\">\n                                View Catalog\n                            <\/a>\n                            <a href=\"\/collections\/all\" class=\"button button--primary\">\n                                Shop All\n                            <\/a>\n                        <\/div>\n                    <\/div>\n                <\/div>\n            <\/div>\n        <\/div>\n    <\/div>\n<\/div>",
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
     }
   },
   "order": [
+    "custom_liquid_9RyPXd",
     "image_banner",
     "featured_collection",
     "featured_collection_ncaq4f",
     "featured_collection_TUnqUb",
     "newsletter_F9XGnN",
     "featured_blog_n6yFHt",
-    "multirow_jBQeUC",
-    "custom_liquid_9RyPXd"
+    "multirow_jBQeUC"
   ]
 }
