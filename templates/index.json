@@ -3,7 +3,7 @@
     "custom_liquid_9RyPXd": {
       "type": "custom-liquid",
       "custom_css": [
-        "h2 {text-align: center;}",
+        "h2 {display: bloack; width: 100%; text-align: center; font-size: 32px;}",
         ".hero-img img {width: 100%; height: auto;}",
         ".button-container {display: flex; gap: 16px; width: 100%;}",
         ".button {flex: 1 1 50%;}"
