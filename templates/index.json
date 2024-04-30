@@ -59,8 +59,8 @@
     "featured_collection": {
       "type": "featured-collection",
       "custom_css": [
-        ".media {background-color: white;}",
-        ".media img {height: 100%; width: auto; \/* margin: 0 auto; *\/ position: static;}"
+        ".media {background-color: white; \/* border: 1px solid #f9f9f9;*\/ padding: 4px;}",
+        ".media img {height: 100%; width: auto; margin: 0 auto; position: static;}"
       ],
       "settings": {
         "title": "Best Sellers",
@@ -91,8 +91,8 @@
     "featured_collection_ncaq4f": {
       "type": "featured-collection",
       "custom_css": [
-        ".media {background-color: white;}",
-        ".media img {height: 100%; width: auto; \/* margin: 0 auto; *\/ position: static;}"
+        ".media {background-color: white; \/* border: 1px solid #f9f9f9;*\/ padding: 4px;}",
+        ".media img {height: 100%; width: auto; margin: 0 auto; position: static;}"
       ],
       "settings": {
         "title": "On Sale",
@@ -123,8 +123,8 @@
     "featured_collection_TUnqUb": {
       "type": "featured-collection",
       "custom_css": [
-        ".media {background-color: white;}",
-        ".media img {height: 100%; width: auto; \/* margin: 0 auto; *\/ position: static;}"
+        ".media {background-color: white; \/* border: 1px solid #f9f9f9;*\/ padding: 4px;}",
+        ".media img {height: 100%; width: auto; margin: 0 auto; position: static;}"
       ],
       "settings": {
         "title": "Coming Soon",
