@@ -4,13 +4,14 @@
       "type": "main-blog",
       "custom_css": [
         ".blog-articles {grid-template-columns: 1fr; gap: 2rem;}",
-        ".card {display: flex; flex-direction: row; gap: 2rem;}",
+        ".card {display: flex; flex-direction: row; flex-wrap: wrap; gap: 2rem;}",
         ".card__inner {display: block; flex: 0 1 200px; margin: 0 auto; background-color: unset;}",
         ".media,.card__media {position: static !important;}",
         ".card__media img {display: block; width: 100%; max-width: 200px; height: auto; margin: 0 auto; position: static !important;}",
         ".card--media .card__inner .card__content {padding: 0;}",
         ".card > .card__content {flex: 1 0 300px;}",
-        ".rte-width {margin-left: 0; margin-right: 0;}"
+        ".rte-width {margin-left: 0; margin-right: 0;}",
+        "time {display:none;}"
       ],
       "settings": {
         "layout": "grid",
