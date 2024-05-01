@@ -1,3 +1,10 @@
+// window.shouldDebug = true;
+function tjnDebug(...logText) {
+  if (window.shouldDebug === true) {
+    console.log(...logText);
+  }
+}
+
 function getFocusableElements(container) {
   return Array.from(
     container.querySelectorAll(
@@ -964,12 +971,14 @@ class VariantSelects extends HTMLElement {
     this.updateMasterId();
     this.updateSelectedSwatchValue(event);
     this.toggleAddButton(true, '', false);
+    this.toggleRequestOutOfStock(true, 1);
     this.updatePickupAvailability();
     this.removeErrorMessage();
     this.updateVariantStatuses();
 
     if (!this.currentVariant) {
       this.toggleAddButton(true, '', true);
+      this.toggleRequestOutOfStock(true, 2);
       this.setUnavailable();
     } else {
       this.updateMedia();
@@ -1059,6 +1068,8 @@ class VariantSelects extends HTMLElement {
   }
 
   updateVariantStatuses() {
+    tjnDebug("updateVariantStatuses");
+
     const selectedOptionOneVariants = this.variantData.filter(
       (variant) => this.querySelector(':checked').value === variant.option1
     );
@@ -1110,6 +1121,7 @@ class VariantSelects extends HTMLElement {
   }
 
   renderProductInfo() {
+    tjnDebug("RENDER PRODUCT INFO");
     const requestedVariantId = this.currentVariant.id;
     const sectionId = this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section;
 
@@ -1180,6 +1192,12 @@ class VariantSelects extends HTMLElement {
           window.variantStrings.soldOut
         );
 
+        const disabled = addButtonUpdated ? addButtonUpdated.hasAttribute('disabled') : true;
+        tjnDebug(`disabled`, disabled);
+        this.toggleRequestOutOfStock(!disabled, 3);
+
+        // 
+
         publish(PUB_SUB_EVENTS.variantChange, {
           data: {
             sectionId,
@@ -1190,7 +1208,24 @@ class VariantSelects extends HTMLElement {
       });
   }
 
+  // TJN - Custom
+  toggleRequestOutOfStock(hide = true, location = undefined) {
+    tjnDebug(`toggleRequestOutOfStock`, hide, location);
+    const buyButton = document.querySelector('[data-buy-button]');
+    const requestButton = document.querySelector('[data-request-out-of-stock]');
+
+    buyButton.classList.remove('hide');
+    if (hide) {
+      requestButton.classList.add('hide');
+      buyButton.classList.remove('hide');
+    } else {
+      requestButton.classList.remove('hide');
+      buyButton.classList.add('hide');
+    }
+  }
+
   toggleAddButton(disable = true, text, modifyClass = true) {
+    tjnDebug("toggleAddButton");
     const productForm = document.getElementById(`product-form-${this.dataset.section}`);
     if (!productForm) return;
     const addButton = productForm.querySelector('[name="add"]');
