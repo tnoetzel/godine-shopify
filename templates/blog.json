@@ -10,7 +10,8 @@
         ".card__media img {display: block; width: 100%; max-width: 200px; height: auto; margin: 0 auto; position: static !important;}",
         ".card--media .card__inner .card__content {padding: 0;}",
         ".card > .card__content {flex: 1 0 300px;}",
-        ".rte-width {margin-left: 0; margin-right: 0;}"
+        ".rte-width {margin-left: 0; margin-right: 0;}",
+        "time {display:none;}"
       ],
       "settings": {
         "layout": "grid",
