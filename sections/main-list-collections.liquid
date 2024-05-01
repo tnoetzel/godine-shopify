@@ -27,7 +27,12 @@
     -%}
   {% endcomment %}
 
+  {% comment %}
+    Pagination seems borked here...
+    For loop seems to work with more than 50 items, so explicitly setting paginate_by to total size of array + 1
+  {% endcomment %}
   {% assign collections = collections | where: 'template_suffix', 'author' | sort: 'handle' %}
+  {% assign paginate_by = collections.size | plus: 1 %}
 
   {%- paginate collections by paginate_by -%}
     <ul
