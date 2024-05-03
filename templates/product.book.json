@@ -67,6 +67,7 @@
         "custom_liquid_pgbn8B"
       ],
       "custom_css": [
+        ".product__title {margin-bottom: 12px;}",
         "h2 {font-weight: normal; margin: 8px 0;}"
       ],
       "settings": {
