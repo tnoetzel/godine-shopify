@@ -1,6 +1,5 @@
 {
   "current": {
-    "logo": "shopify:\/\/shop_images\/godine-logo_d4443e48-92c9-4342-8461-f49b978a0f64.png",
     "logo_width": 140,
     "favicon": "shopify:\/\/shop_images\/favicon.png",
     "type_header_font": "georgia_pro_n6",
@@ -115,6 +114,8 @@
     "show_cart_note": false,
     "cart_drawer_collection": "",
     "checkout_logo_image": "shopify:\/\/shop_images\/godine-logo_d4443e48-92c9-4342-8461-f49b978a0f64.png",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "small",
     "sections": {
       "main-password-header": {
         "type": "main-password-header",
