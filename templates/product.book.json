@@ -67,7 +67,7 @@
         "custom_liquid_pgbn8B"
       ],
       "custom_css": [
-        "h2 {font-weight: normal;}"
+        "h2 {font-weight: normal; margin: 8px 0;}"
       ],
       "settings": {
         "enable_sticky_info": true,
