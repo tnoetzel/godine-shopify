@@ -3,7 +3,7 @@
     "main": {
       "type": "main-page",
       "custom_css": [
-        "table,tr,td {border: none; box-shadow: none;}",
+        ".table,tr,td {border: none; box-shadow: none;}",
         "tr {display: flex; flex-wrap: wrap; gap: 0.5rem;}",
         "td {flex: 1 1 250px; padding: 0;}"
       ],
