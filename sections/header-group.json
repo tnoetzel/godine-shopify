@@ -41,9 +41,10 @@
     "header": {
       "type": "header",
       "custom_css": [
-        "nav.header__inline-menu a, nav.header__inline-menu span {font-size: 16px;}",
+        "nav.header__inline-menu a,nav.header__inline-menu span {font-size: 16px;}",
         "a:hover,a:active,.header__icon:hover,.header__active-menu-item {color: #c34d5b;}",
-        ".header__heading-link span {color: #c34d5b; text-transform: uppercase; \/* font-style: italic; *\/ font-size: 3rem;}"
+        ".header__heading-link span {color: #c34d5b; text-transform: uppercase; \/* font-style: italic; *\/ font-size: 3rem;}",
+        "@media screen and (max-width: 389) {.header__heading-link span {font-size: 2.5rem; }}"
       ],
       "settings": {
         "logo_position": "middle-left",
