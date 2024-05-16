@@ -44,7 +44,7 @@
       ],
       "settings": {
         "color_scheme": "scheme-1",
-        "newsletter_enable": true,
+        "newsletter_enable": false,
         "newsletter_heading": "Join Our Email List",
         "enable_follow_on_shop": false,
         "show_social": false,
