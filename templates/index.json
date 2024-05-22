@@ -219,7 +219,7 @@
     "featured_blog_n6yFHt": {
       "type": "featured-blog",
       "settings": {
-        "heading": "Upcoming Events",
+        "heading": "Upcoming Author Events",
         "heading_size": "h1",
         "blog": "news",
         "post_limit": 4,
