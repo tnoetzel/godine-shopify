@@ -55,7 +55,7 @@
         </li>
       {%- endfor -%}
     </ul>
-    {% render 'pagination', paginate: paginate %}
+    {% comment %} {% render 'pagination', paginate: paginate %} {% endcomment %}
   {%- endpaginate -%}
 </div>
 {% schema %}
@@ -156,89 +156,89 @@
 {% endschema %}
 
 {% comment %}
-<script>
-  // NEW
-  const collectionQuery = `query ($cursor: String) {
-    collections(first: 2, query:"title:author*", after: $cursor) {
-          edges {
-              node {
-                  id
-                  title
-                  handle
-                  updatedAt
-                  image {
-                    url
-                  }
-                  authorLastFirst: metafield(namespace: "godine", key: "author_last_first") {
-                      value
-                      type
-                  }
-              }
-          }
-          pageInfo {
-              hasPreviousPage
-              hasNextPage
-              startCursor
-              endCursor
-          }
-    }
-  }`;
+  <script>
+    // NEW
+    const collectionQuery = `query ($cursor: String) {
+      collections(first: 2, query:"title:author*", after: $cursor) {
+            edges {
+                node {
+                    id
+                    title
+                    handle
+                    updatedAt
+                    image {
+                      url
+                    }
+                    authorLastFirst: metafield(namespace: "godine", key: "author_last_first") {
+                        value
+                        type
+                    }
+                }
+            }
+            pageInfo {
+                hasPreviousPage
+                hasNextPage
+                startCursor
+                endCursor
+            }
+      }
+    }`;
 
-  const myHeaders = new Headers();
-  myHeaders.append('X-Shopify-Storefront-Access-Token', '0fc0056e09b62e93104f1e4d0f0b1dc1');
-  myHeaders.append('Content-Type', 'application/json');
-  myHeaders.append('Accept', 'application/json');
+    const myHeaders = new Headers();
+    myHeaders.append('X-Shopify-Storefront-Access-Token', '0fc0056e09b62e93104f1e4d0f0b1dc1');
+    myHeaders.append('Content-Type', 'application/json');
+    myHeaders.append('Accept', 'application/json');
 
-  function getAuthors(progress, cursor = null, authors = []) {
-    return new Promise((resolve, reject) =>
-      fetch('https://davidrgodine.myshopify.com/api/2024-04/graphql.json', {
-        body: JSON.stringify({
-          query: collectionQuery,
-          variables: {
-            cursor,
-          },
-        }),
-        method: 'POST',
-        headers: myHeaders,
-        redirect: 'follow',
-      })
-        .then((res) => {
-          if (res.status !== 200) {
-            throw `${res.status}: ${res.statusText}`;
-          }
-
-          res
-            .text()
-            .then((textData) => {
-              const data = JSON.parse(textData).data.collections;
-              console.log(`data`, data);
-              const authorsData = data.edges.map((obj) => obj.node);
-              authors = authors.concat(authorsData);
-
-              if (data.pageInfo.hasNextPage) {
-                progress && progress(authors);
-                getAuthors(progress, data.pageInfo.endCursor, authors).then(resolve).catch(reject);
-              } else {
-                resolve(authors);
-              }
-            })
-            .catch(reject);
+    function getAuthors(progress, cursor = null, authors = []) {
+      return new Promise((resolve, reject) =>
+        fetch('https://davidrgodine.myshopify.com/api/2024-04/graphql.json', {
+          body: JSON.stringify({
+            query: collectionQuery,
+            variables: {
+              cursor,
+            },
+          }),
+          method: 'POST',
+          headers: myHeaders,
+          redirect: 'follow',
         })
-        .catch(reject)
-    );
-  }
+          .then((res) => {
+            if (res.status !== 200) {
+              throw `${res.status}: ${res.statusText}`;
+            }
 
-  // render progress
-  function progressCallback(authors) {
-    console.log(`${authors.length} loaded`);
-  }
+            res
+              .text()
+              .then((textData) => {
+                const data = JSON.parse(textData).data.collections;
+                console.log(`data`, data);
+                const authorsData = data.edges.map((obj) => obj.node);
+                authors = authors.concat(authorsData);
 
-  getAuthors(progressCallback)
-    .then((authors) => {
-      console.log(authors); // all authors have been loaded
+                if (data.pageInfo.hasNextPage) {
+                  progress && progress(authors);
+                  getAuthors(progress, data.pageInfo.endCursor, authors).then(resolve).catch(reject);
+                } else {
+                  resolve(authors);
+                }
+              })
+              .catch(reject);
+          })
+          .catch(reject)
+      );
+    }
 
-      // https://stackoverflow.com/questions/11840858/creating-nested-tags-using-document-createelement
-    })
-    .catch(console.error);
-</script>
+    // render progress
+    function progressCallback(authors) {
+      console.log(`${authors.length} loaded`);
+    }
+
+    getAuthors(progressCallback)
+      .then((authors) => {
+        console.log(authors); // all authors have been loaded
+
+        // https://stackoverflow.com/questions/11840858/creating-nested-tags-using-document-createelement
+      })
+      .catch(console.error);
+  </script>
 {% endcomment %}
