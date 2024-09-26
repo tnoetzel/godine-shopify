@@ -1,7 +1,16 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "current": {
     "logo_width": 140,
-    "favicon": "shopify:\/\/shop_images\/favicon.png",
+    "favicon": "shopify://shop_images/favicon.png",
     "type_header_font": "georgia_pro_n6",
     "heading_scale": 100,
     "type_body_font": "georgia_pro_n4",
@@ -96,11 +105,11 @@
     "badge_corner_radius": 40,
     "sale_badge_color_scheme": "scheme-5",
     "sold_out_badge_color_scheme": "scheme-3",
-    "social_facebook_link": "https:\/\/www.facebook.com\/godinepublisher\/",
-    "social_instagram_link": "https:\/\/instagram.com\/godinepub\/",
+    "social_facebook_link": "https://www.facebook.com/godinepublisher/",
+    "social_instagram_link": "https://instagram.com/godinepub/",
     "social_youtube_link": "",
     "social_tiktok_link": "",
-    "social_twitter_link": "https:\/\/twitter.com\/GodinePub",
+    "social_twitter_link": "",
     "social_snapchat_link": "",
     "social_pinterest_link": "",
     "social_tumblr_link": "",
@@ -113,7 +122,7 @@
     "show_vendor": false,
     "show_cart_note": false,
     "cart_drawer_collection": "",
-    "checkout_logo_image": "shopify:\/\/shop_images\/godine-logo_d4443e48-92c9-4342-8461-f49b978a0f64.png",
+    "checkout_logo_image": "shopify://shop_images/godine-logo_d4443e48-92c9-4342-8461-f49b978a0f64.png",
     "checkout_logo_position": "left",
     "checkout_logo_size": "small",
     "sections": {
