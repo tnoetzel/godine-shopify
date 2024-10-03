@@ -15,7 +15,7 @@
 
       ],
       "settings": {
-        "custom_liquid": "<style>\n    #home-hero {\n        background-image: url(\"https:\/\/cdn.shopify.com\/s\/files\/1\/0565\/6087\/7686\/files\/home-hero-bg.jpg?v=1715353773\");\n        background-size: cover;\n        background-position: center bottom;\n        background-repeat: no-repeat;\n\n        padding: 0 3%;\n        display: flex;\n        gap: 16px;\n        justify-content: space-between;\n        align-items: center;\n    }\n\n    #home-hero>* {\n        flex: 1;\n    }\n    \n\n    @media screen and (max-width: 800px) {\n        #home-hero {\n            flex-wrap: wrap;\n            padding: 32px;\n        }\n\n        #home-hero>* {\n            flex: 1 0 100%;\n        }\n\n        #home-hero img {\n            display: none !important;\n        }\n    }\n\n    #home-hero h1,\n    #home-hero h2 {\n        margin: 0;\n        text-align: center;\n    }\n\n    #home-hero h1 {\n        font-size: 48px;\n        line-height: 1;\n        margin-bottom: 1rem;\n    }\n\n    #home-hero h2 {\n        font-size: 20px;\n    }\n\n    @media screen and (min-width: 1200px) {\n        #home-hero h1 {\n            font-size: calc(24px + 3vw);\n            line-height: 1;\n            margin-bottom: calc(8px + 0.5vw);\n        }\n\n        #home-hero h2 {\n            font-size: calc(16px + 1vw);\n            line-height: 1.25;\n        }\n    }\n\n    #home-hero img {\n        display: block;\n        width: 100%;\n        max-width: 400px;\n        height: auto;\n        margin: 0 auto;\n    }\n\n    #home-hero .btn-block a {\n        display: flex;\n        max-width: 300px;\n        margin: 8px auto;\n        text-align: center;\n        text-transform: uppercase;\n    }\n<\/style>\n\n<section id=\"home-hero\">\n    <div>\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0565\/6087\/7686\/files\/home-hero-cover2.png\" alt=\"\">\n    <\/div>\n\n    <div>\n<!--        \n<h1>Save 20%<\/h1>\n        <h2>New & Recent Titles<br \/>\n            Summer 2024<br>*Use Code SUMMERSAVE<\/h2>\n-->\n    <\/div>\n\n    <div class=\"btn-block\">\n        <a href=\"\/pages\/catalog\" class=\"button button--primary\">View the Catalog<\/a>\n        <a href=\"\/collections\/all\" class=\"button button--primary\">Shop All<\/a>\n    <\/div>\n<\/section>",
+        "custom_liquid": "<style>\n    #home-hero {\n        background-image: url(\"https://cdn.shopify.com/s/files/1/0565/6087/7686/files/home-hero-bg.jpg?v=1715353773\");\n        background-size: cover;\n        background-position: center bottom;\n        background-repeat: no-repeat;\n\n        padding: 0 3%;\n        display: flex;\n        gap: 16px;\n        justify-content: space-between;\n        align-items: center;\n    }\n\n    #home-hero>* {\n        flex: 1;\n    }\n    \n\n    @media screen and (max-width: 800px) {\n        #home-hero {\n            flex-wrap: wrap;\n            padding: 32px;\n        }\n\n        #home-hero>* {\n            flex: 1 0 100%;\n        }\n\n        #home-hero img {\n            display: none !important;\n        }\n    }\n\n    #home-hero h1,\n    #home-hero h2 {\n        margin: 0;\n        text-align: center;\n    }\n\n    #home-hero h1 {\n        font-size: 48px;\n        line-height: 1;\n        margin-bottom: 1rem;\n    }\n\n    #home-hero h2 {\n        font-size: 20px;\n    }\n\n    @media screen and (min-width: 1200px) {\n        #home-hero h1 {\n            font-size: calc(24px + 3vw);\n            line-height: 1;\n            margin-bottom: calc(8px + 0.5vw);\n        }\n\n        #home-hero h2 {\n            font-size: calc(16px + 1vw);\n            line-height: 1.25;\n        }\n    }\n\n    #home-hero img {\n        display: block;\n        width: 100%;\n        max-width: 400px;\n        height: auto;\n        margin: 0 auto;\n    }\n\n    #home-hero .btn-block a {\n        display: flex;\n        max-width: 300px;\n        margin: 8px auto;\n        text-align: center;\n        text-transform: uppercase;\n    }\n</style>\n\n<section id=\"home-hero\">\n    <div>\n        <img src=\"https://cdn.shopify.com/s/files/1/0565/6087/7686/files/home-hero-cover2.png\" alt=\"\">\n    </div>\n\n    <div>\n<!--        \n<h1>Save 20%</h1>\n        <h2>New & Recent Titles<br />\n            Summer 2024<br>*Use Code SUMMERSAVE</h2>\n-->\n    </div>\n\n    <div class=\"btn-block\">\n        <a href=\"/pages/catalog\" class=\"button button--primary\">View the Catalog</a>\n        <a href=\"/collections/all\" class=\"button button--primary\">Shop All</a>\n    </div>\n</section>",
         "color_scheme": "",
         "padding_top": 0,
         "padding_bottom": 0
@@ -36,10 +36,10 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "View the Catalog",
-            "button_link_1": "shopify:\/\/pages\/catalog",
+            "button_link_1": "shopify://pages/catalog",
             "button_style_secondary_1": false,
             "button_label_2": "Shop All",
-            "button_link_2": "shopify:\/\/collections\/all",
+            "button_link_2": "shopify://collections/all",
             "button_style_secondary_2": false
           }
         }
@@ -50,7 +50,7 @@
       ],
       "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/godine-hero-banner-2.jpg",
+        "image": "shopify://shop_images/godine-hero-banner-2.jpg",
         "image_overlay_opacity": 10,
         "image_height": "adapt",
         "desktop_content_position": "middle-center",
@@ -66,7 +66,7 @@
     "featured_collection": {
       "type": "featured-collection",
       "custom_css": [
-        ".media {background-color: white; \/* border: 1px solid #f9f9f9;*\/ padding: 4px;}",
+        ".media {background-color: white; /* border: 1px solid #f9f9f9;*/ padding: 4px;}",
         ".media img {height: 100%; width: auto; margin: 0 auto; position: static;}"
       ],
       "settings": {
@@ -98,7 +98,7 @@
     "featured_collection_AnWrDN": {
       "type": "featured-collection",
       "custom_css": [
-        ".media {background-color: white; \/* border: 1px solid #f9f9f9;*\/ padding: 4px;}",
+        ".media {background-color: white; /* border: 1px solid #f9f9f9;*/ padding: 4px;}",
         ".media img {height: 100%; width: auto; margin: 0 auto; position: static;}"
       ],
       "settings": {
@@ -129,8 +129,9 @@
     },
     "featured_collection_ciVeq3": {
       "type": "featured-collection",
+      "disabled": true,
       "custom_css": [
-        ".media {background-color: white; \/* border: 1px solid #f9f9f9;*\/ padding: 4px;}",
+        ".media {background-color: white; /* border: 1px solid #f9f9f9;*/ padding: 4px;}",
         ".media img {height: 100%; width: auto; margin: 0 auto; position: static;}"
       ],
       "settings": {
@@ -159,10 +160,42 @@
         "padding_bottom": 20
       }
     },
+    "featured_collection_wbWNyV": {
+      "type": "featured-collection",
+      "custom_css": [
+        ".media {background-color: white; /* border: 1px solid #f9f9f9;*/ padding: 4px;}",
+        ".media img {height: 100%; width: auto; margin: 0 auto; position: static;}"
+      ],
+      "settings": {
+        "title": "Staff Picks for Great Gifts",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "category-staff-picks-for-great-gifts",
+        "products_to_show": 5,
+        "columns_desktop": 5,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
     "featured_collection_ncaq4f": {
       "type": "featured-collection",
       "custom_css": [
-        ".media {background-color: white; \/* border: 1px solid #f9f9f9;*\/ padding: 4px;}",
+        ".media {background-color: white; /* border: 1px solid #f9f9f9;*/ padding: 4px;}",
         ".media img {height: 100%; width: auto; margin: 0 auto; position: static;}"
       ],
       "settings": {
@@ -194,7 +227,7 @@
     "featured_collection_9r6Jmk": {
       "type": "featured-collection",
       "custom_css": [
-        ".media {background-color: white; \/* border: 1px solid #f9f9f9;*\/ padding: 4px;}",
+        ".media {background-color: white; /* border: 1px solid #f9f9f9;*/ padding: 4px;}",
         ".media img {height: 100%; width: auto; margin: 0 auto; position: static;}"
       ],
       "settings": {
@@ -236,7 +269,7 @@
         "paragraph_r88JN6": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Subscribe to our newsletter for updates and promotions<\/p>"
+            "text": "<p>Subscribe to our newsletter for updates and promotions</p>"
           }
         },
         "email_form_bjGJk4": {
@@ -280,7 +313,7 @@
         "column_khdfyX": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/nyt2.jpg",
+            "image": "shopify://shop_images/nyt2.jpg",
             "title": "",
             "text": "",
             "link_label": "",
@@ -290,7 +323,7 @@
         "column_wnwcfn": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/wsj2.jpg",
+            "image": "shopify://shop_images/wsj2.jpg",
             "title": "",
             "text": "",
             "link_label": "",
@@ -300,7 +333,7 @@
         "column_7yacHW": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/newsweek2.jpg",
+            "image": "shopify://shop_images/newsweek2.jpg",
             "title": "",
             "text": "",
             "link_label": "",
@@ -337,6 +370,7 @@
     "featured_collection",
     "featured_collection_AnWrDN",
     "featured_collection_ciVeq3",
+    "featured_collection_wbWNyV",
     "featured_collection_ncaq4f",
     "featured_collection_9r6Jmk",
     "newsletter_F9XGnN",
