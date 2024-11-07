@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "name": "t:sections.header.name",
   "type": "header",
@@ -21,10 +21,19 @@
             "text": "Last Week to Save 20% with code GODINE24 at checkout | Offer ends June 30",
             "link": ""
           }
+        },
+        "announcement_LjP34M": {
+          "type": "announcement",
+          "disabled": true,
+          "settings": {
+            "text": "Small Business Saturday: Free shipping on all orders with code SMALL30",
+            "link": ""
+          }
         }
       },
       "block_order": [
-        "announcement-bar-0"
+        "announcement-bar-0",
+        "announcement_LjP34M"
       ],
       "settings": {
         "color_scheme": "scheme-5",
@@ -53,7 +62,7 @@
       "custom_css": [
         "nav.header__inline-menu a,nav.header__inline-menu span {font-size: 16px;}",
         "a:hover,a:active,.header__icon:hover,.header__active-menu-item {color: #c34d5b;}",
-        ".header__heading-link span {color: #c34d5b; text-transform: uppercase; \/* font-style: italic; *\/ font-size: 3rem;}",
+        ".header__heading-link span {color: #c34d5b; text-transform: uppercase; /* font-style: italic; */ font-size: 3rem;}",
         "@media screen and (max-width: 389px) {.header__heading-link span {font-size: 2rem; }}"
       ],
       "settings": {
