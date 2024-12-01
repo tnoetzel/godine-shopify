@@ -24,6 +24,7 @@
         },
         "announcement_LjP34M": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "TODAY ONLY Small Business Saturday: Free shipping on all orders with code SMALL30",
             "link": ""
