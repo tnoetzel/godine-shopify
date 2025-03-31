@@ -117,12 +117,21 @@
     </small>
   </div>
   {%- if show_badges -%}
+    {% for collection in product.collections %}
+      {% if collection.title == '*Category: Coming Soon' %}
+        {% assign coming_soon = true %}
+      {% endif %}
+    {% endfor %}
     <span class="badge price__badge-sale color-{{ settings.sale_badge_color_scheme }}">
       {{ 'products.product.on_sale' | t }}
     </span>
 
     <span class="badge price__badge-sold-out color-{{ settings.sold_out_badge_color_scheme }}">
-      {{ 'products.product.sold_out' | t }}
+      {% if coming_soon %}
+        Coming Soon
+      {% else %}
+        {{ 'products.product.sold_out' | t }}
+      {% endif %}
     </span>
   {%- endif -%}
 </div>
