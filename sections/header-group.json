@@ -24,9 +24,8 @@
         },
         "announcement_LjP34M": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
-            "text": "SALE ENDS TODAY! Save 20% on all regular priced items with code GODINE25",
+            "text": "Christmas in July! Save 20% on select titles with code XMAS25",
             "link": ""
           }
         }
