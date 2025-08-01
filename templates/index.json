@@ -63,6 +63,7 @@
     },
     "featured_collection_HfPpPG": {
       "type": "featured-collection",
+      "disabled": true,
       "custom_css": [
         ".media {background-color: white; /* border: 1px solid #f9f9f9;*/ padding: 4px;}",
         ".media img {height: 100%; width: auto; margin: 0 auto; position: static;}"
