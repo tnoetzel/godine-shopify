@@ -25,7 +25,7 @@
         "announcement_LjP34M": {
           "type": "announcement",
           "settings": {
-            "text": "Christmas in July! Save 20% on select titles with code XMAS25",
+            "text": "FREE SHIPPING on orders over $35, now through August 20th",
             "link": ""
           }
         }
@@ -34,7 +34,6 @@
         "announcement-bar-0",
         "announcement_LjP34M"
       ],
-      "disabled": true,
       "settings": {
         "color_scheme": "scheme-3",
         "show_line_separator": true,
