@@ -24,6 +24,7 @@
         },
         "announcement_LjP34M": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "FREE SHIPPING on orders over $35, now through August 20th",
             "link": ""
@@ -36,18 +37,6 @@
       ],
       "settings": {
         "color_scheme": "scheme-3",
-        "show_line_separator": true,
-        "show_social": false,
-        "auto_rotate": false,
-        "change_slides_speed": 5,
-        "enable_country_selector": false,
-        "enable_language_selector": false
-      }
-    },
-    "announcement_bar_dqck6U": {
-      "type": "announcement-bar",
-      "settings": {
-        "color_scheme": "",
         "show_line_separator": true,
         "show_social": false,
         "auto_rotate": false,
@@ -83,7 +72,6 @@
   },
   "order": [
     "announcement-bar",
-    "announcement_bar_dqck6U",
     "header"
   ]
 }
