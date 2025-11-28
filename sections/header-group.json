@@ -24,9 +24,8 @@
         },
         "announcement_LjP34M": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
-            "text": "FREE SHIPPING on orders over $35, now through August 20th",
+            "text": "FREE SHIPPING on all orders, with code SMALL29",
             "link": ""
           }
         }
