@@ -24,6 +24,7 @@
         },
         "announcement_LjP34M": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "LAST DAY to order for Christmas Delivery!",
             "link": ""
