@@ -16,9 +16,8 @@
       "blocks": {
         "announcement-bar-0": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
-            "text": "Last Week to Save 20% with code GODINE24 at checkout | Offer ends June 30",
+            "text": "FREE SHIPPING ON ALL ORDERS OVER $35 | NOW THROUGH 2/15",
             "link": ""
           }
         },
