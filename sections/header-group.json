@@ -34,6 +34,7 @@
         "announcement-bar-0",
         "announcement_LjP34M"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "scheme-5",
         "show_line_separator": true,
