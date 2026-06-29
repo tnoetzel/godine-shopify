@@ -85,19 +85,18 @@
     },
     "featured_collection_HfPpPG": {
       "type": "featured-collection",
-      "disabled": true,
       "custom_css": [
         ".media {background-color: white; /* border: 1px solid #f9f9f9;*/ padding: 4px;}",
         ".media img {height: 100%; width: auto; margin: 0 auto; position: static;}"
       ],
       "name": "XMAS in July",
       "settings": {
-        "title": "Christmas in July",
+        "title": "America 250",
         "heading_size": "h1",
-        "description": "<p>Now until July 31st, save 20% on select titles with code XMAS25</p>",
+        "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "category-christmas-in-july",
+        "collection": "category-america-250",
         "products_to_show": 5,
         "columns_desktop": 5,
         "full_width": false,
