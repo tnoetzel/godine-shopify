@@ -16,9 +16,8 @@
       "blocks": {
         "announcement-bar-0": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
-            "text": "SPRING SALE! Save 20% on all full priced items with code GODINE26",
+            "text": "Fourth of July Free Shipping On Orders Over $35!",
             "link": ""
           }
         },
