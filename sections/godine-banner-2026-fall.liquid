@@ -1,0 +1,55 @@
+{%- assign mobile_image = images['2026-fall-mobile.png'] -%}
+{%- assign tablet_image = images['2026-fall-tablet.png'] -%}
+{%- assign desktop_image = images['2026-fall-desktop.png'] -%}
+
+<style>
+  #GodineBanner-{{ section.id }} {
+    display: block;
+    line-height: 0;
+  }
+
+  #GodineBanner-{{ section.id }} img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+</style>
+
+<section id="GodineBanner-{{ section.id }}" aria-label="Fall 2026">
+  <a href="{{ routes.collections_url }}/category-hot-off-the-press">
+    <picture>
+      <source
+        media="(min-width: 1512px)"
+        srcset="{{ '2026-fall-desktop.png' | file_url }}"
+        width="{{ desktop_image.width }}"
+        height="{{ desktop_image.height }}"
+      >
+      <source
+        media="(min-width: 768px)"
+        srcset="{{ '2026-fall-tablet.png' | file_url }}"
+        width="{{ tablet_image.width }}"
+        height="{{ tablet_image.height }}"
+      >
+      <img
+        src="{{ '2026-fall-mobile.png' | file_url }}"
+        alt="Shop the Fall 2026 collection"
+        width="{{ mobile_image.width }}"
+        height="{{ mobile_image.height }}"
+        loading="eager"
+        fetchpriority="high"
+      >
+    </picture>
+  </a>
+</section>
+
+{% schema %}
+{
+  "name": "Fall 2026 banner",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Fall 2026 banner"
+    }
+  ]
+}
+{% endschema %}
