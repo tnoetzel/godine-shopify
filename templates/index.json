@@ -9,8 +9,42 @@
  */
 {
   "sections": {
+    "featured_collection_AnWrDN": {
+      "type": "featured-collection",
+      "custom_css": [
+        ".media {background-color: white; /* border: 1px solid #f9f9f9;*/ padding: 4px;}",
+        ".media img {height: 100%; width: auto; margin: 0 auto; position: static;}"
+      ],
+      "name": "Hot Off the Press",
+      "settings": {
+        "title": "New Books",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": true,
+        "description_style": "body",
+        "collection": "category-hot-off-the-press",
+        "products_to_show": 5,
+        "columns_desktop": 5,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
     "godine_banner_2026_fall_tNfjQK": {
       "type": "godine-banner-2026-fall",
+      "disabled": true,
       "name": "Fall 2026 banner",
       "settings": {}
     },
@@ -144,39 +178,6 @@
         "view_all_style": "solid",
         "enable_desktop_slider": false,
         "color_scheme": "scheme-1",
-        "image_ratio": "portrait",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 20,
-        "padding_bottom": 20
-      }
-    },
-    "featured_collection_AnWrDN": {
-      "type": "featured-collection",
-      "custom_css": [
-        ".media {background-color: white; /* border: 1px solid #f9f9f9;*/ padding: 4px;}",
-        ".media img {height: 100%; width: auto; margin: 0 auto; position: static;}"
-      ],
-      "name": "Hot Off the Press",
-      "settings": {
-        "title": "Hot Off the Press",
-        "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "category-hot-off-the-press",
-        "products_to_show": 5,
-        "columns_desktop": 5,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "",
         "image_ratio": "portrait",
         "image_shape": "default",
         "show_secondary_image": false,
@@ -429,6 +430,7 @@
     }
   },
   "order": [
+    "featured_collection_AnWrDN",
     "godine_banner_2026_fall_tNfjQK",
     "custom_liquid_wLQn3a",
     "custom_liquid_VtLpE9",
@@ -436,7 +438,6 @@
     "image_banner",
     "featured_collection_HfPpPG",
     "featured_collection",
-    "featured_collection_AnWrDN",
     "featured_collection_ciVeq3",
     "featured_collection_wbWNyV",
     "featured_collection_ncaq4f",
